@@ -1,0 +1,4 @@
+interface:
+  display_name: "Alere Health Intelligence"
+  short_description: "Practical evidence-based nutrition guidance"
+  default_prompt: "Use $alere-health-intelligence to help me make a practical nutrition decision."
