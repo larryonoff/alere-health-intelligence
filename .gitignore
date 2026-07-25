@@ -11,3 +11,6 @@
 *.log
 *.tmp
 tmp/
+
+# Transcription cache: extracted audio and raw whisper JSON, regenerable.
+work/
