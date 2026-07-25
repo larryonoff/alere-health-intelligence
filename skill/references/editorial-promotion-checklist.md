@@ -3,6 +3,12 @@
 Use this checklist before moving an idea, source, recipe, or protocol into
 runtime knowledge.
 
+Verify the claim **before** running this checklist. The procedure — how to search,
+how to confirm an identifier actually supports its claim, and how to choose a
+strength label — is `docs/verification-playbook.md`, with the source lookup table
+in `docs/source-registry.md`. Both are repository documentation, not runtime
+references.
+
 ## 1. Define the proposed addition
 
 - State the user problem it solves.

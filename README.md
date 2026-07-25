@@ -48,6 +48,10 @@ strongest, and may evolve into a broader personal health assistant over time.
 - `docs/concept.md` — strategy, evidence, competitive and regulatory analysis
 - `docs/product.md` — product decisions and validation criteria
 - `docs/assistant-capabilities.md` — situations and personalization boundaries
+- `docs/verification-playbook.md` — how to verify a claim before it becomes an
+  evidence entry, and how to confirm an identifier supports it
+- `docs/source-registry.md` — where to search for which question, with API routes
+  and per-source access notes
 - `docs/superpowers/specs/` — approved product and technical designs
 - `docs/superpowers/plans/` — implementation plans
 
