@@ -22,10 +22,13 @@ can do today.
    - Read `references/evidence/README.md`, then the matching entry under
      `references/evidence/`:
      - `conditions/` — prediabetes, type 2 diabetes, elevated LDL, hypertension,
-       MASLD;
-     - `nutrients/` — protein, fibre, ultra-processed foods, supplements;
+       MASLD, coeliac disease and gluten;
+     - `nutrients/` — protein, fibre, legumes, ultra-processed foods, supplements,
+       intestinal permeability and zonulin, probiotics and the microbiome,
+       vitamin B12, vitamin D;
      - `longevity/` — dietary patterns, unproven interventions;
-     - `guidelines/` — conflicting guidance.
+     - `guidelines/` — conflicting guidance, credentialed claims without
+       citations.
    - Read `references/workflows.md` for the selected task format.
    - Read `references/knowledge-map.md` for recipes, meal constructors, menus,
      shopping, storage, or spice pairings.
@@ -37,6 +40,10 @@ can do today.
      context.
    - Read `references/evidence/guidelines/conflicting-guidance.md` when the user
      cites a national guideline or when reputable sources disagree.
+   - Read `references/evidence/guidelines/credentialed-claims-without-citations.md`
+     when a claim is attributed to a doctor, course, documentary, book, or
+     influencer and the support offered is the speaker's qualification rather than
+     a traceable source.
    - Read `references/source-catalog.md` for numerical targets, regional
      guidance, disputed claims, higher-risk questions, or external research.
    - Read `references/self-experimentation.md` when the user wants to test,
@@ -113,3 +120,30 @@ not just a rule to follow.
   helpfulness. Absence of a source is information; say so.
 - **Averaging away a real disagreement.** When guidelines genuinely conflict,
   describing the conflict is more useful than a blended non-answer.
+- **Credential accepted in place of a citation.** "A physician with ten years in
+  leading clinics said so" is not a source. Real qualification raises the prior
+  that a claim is defensible without evidencing any specific claim. Dismissing the
+  person is the opposite failure — see
+  `references/evidence/guidelines/credentialed-claims-without-citations.md`.
+- **Mechanism accepted in place of an outcome.** A mechanism can be genuine and
+  still not establish that acting on it helps a given person. The error is the
+  jump from mechanism to treatment, not the mechanism itself.
+- **Debunking by association.** Deciding a claim is false because an unreliable
+  speaker made it, or because it is popular in wellness marketing. Intestinal
+  permeability and zonulin are real, published research alongside an unsupported
+  consumer syndrome and invalid commercial assays — see
+  `references/evidence/nutrients/intestinal-permeability.md`. Check the literature
+  before rejecting; over-correction is a failure with the same shape as
+  credulity.
+- **Asserted absence of harm read as reassurance.** "No contraindications at
+  all," "impossible to overdose" — the absolute claim is itself the warning sign.
+- **Elimination accepted as a diagnostic test.** Removing a food before serologic
+  and biopsy testing can destroy the diagnosis it was meant to reveal. Coeliac
+  disease is the consequential case: antibodies fall within weeks and villi heal,
+  so "try a month without gluten and see" forfeits the diagnosis and requires a
+  supervised gluten challenge to recover. Say this *before* discussing diet — see
+  `references/evidence/conditions/coeliac-and-gluten.md`.
+- **Agreement mistaken for verification.** When an unsourced claim happens to
+  match the corpus, cite the corpus. The claim's source is still not a source, and
+  a well-supported claim does not become doubtful because an unreliable speaker
+  repeated it.

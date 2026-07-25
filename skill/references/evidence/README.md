@@ -35,17 +35,24 @@ evidence/
 │   ├── type-2-diabetes.md
 │   ├── elevated-ldl.md
 │   ├── hypertension.md
+│   ├── coeliac-and-gluten.md
 │   └── masld.md
 ├── nutrients/                 — nutrient and food-category entries
 │   ├── protein.md
 │   ├── fiber.md
+│   ├── legumes.md
 │   ├── ultra-processed-foods.md
+│   ├── intestinal-permeability.md
+│   ├── probiotics-and-microbiome.md
+│   ├── vitamin-b12.md
+│   ├── vitamin-d.md
 │   └── supplements.md
 ├── longevity/                 — healthspan and aging entries
 │   ├── dietary-patterns.md
 │   └── unproven-interventions.md
 └── guidelines/                — how to handle guidance itself
-    └── conflicting-guidance.md
+    ├── conflicting-guidance.md
+    └── credentialed-claims-without-citations.md
 ```
 
 Directories are separated by what governs the evidence, not by subject:
@@ -58,7 +65,8 @@ Directories are separated by what governs the evidence, not by subject:
 - `longevity/` — largely observational, longer horizon, surrogate or mortality
   endpoints, typically lower certainty. Main risk: overreach into unproven
   optimization.
-- `guidelines/` — meta-level: what to do when authorities disagree.
+- `guidelines/` — meta-level: what to do when authorities disagree, and when a
+  claim arrives with a credential instead of a source.
 
 Keeping `conditions/` and `longevity/` apart prevents strong condition evidence
 from lending borrowed credibility to weaker longevity claims.
