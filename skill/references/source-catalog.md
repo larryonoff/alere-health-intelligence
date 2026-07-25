@@ -17,7 +17,7 @@ than the whole file.
 | US guidance, supplements, or an academic assessment | `United States federal and academic sources` |
 | Dietary patterns, general nutrition, activity, sleep | `Core sources` |
 | European reference values, Poland, pesticide residues | `European and regional sources` |
-| A named personal protocol or a consumer ranking | `Limited and secondary sources` |
+| A named personal protocol, popular book, or consumer ranking | `Limited and secondary sources` |
 | How to rank two sources against each other | `Evidence hierarchy` |
 
 Reviewed claims drawn from these sources, with strength labels and citations, live
@@ -325,6 +325,39 @@ The site's CC BY-NC 4.0 license requires attribution and prohibits commercial
 reuse under its terms. Do not copy its branded recipes, text, graphics, or
 protocol into a commercial product. Independently express ordinary public
 nutrition principles and support them with authoritative sources.
+
+### Clinician-authored popular books
+
+Named examples currently tracked:
+
+- *The Plant-Based Solution* — Joel Kahn, MD (cardiologist);
+- *The Plant Power Doctor* — Gemma Newman, MD (general practitioner);
+- *A Parent's Guide to Intuitive Eating* — Yami Cazorla-Lancaster, DO
+  (paediatrician).
+
+Use only when the user names the book or its author. These are trade books by
+licensed clinicians: an educational summary with a commercial interest, not a
+guideline, systematic review, or consensus statement. The author's credential
+raises the prior that a claim is defensible; it does not make the book citable.
+
+Never cite a book as the source for a health claim. Find the underlying
+guideline, review, or trial and cite that instead. If it cannot be found, say
+that no reliable source covers the question rather than borrowing the book's
+confidence — trade books state well-established and speculative claims in the
+same voice, and cite supporting literature far more often than contradicting
+literature.
+
+When the reviewed corpus already covers the question, answer from the corpus at
+the corpus strength label, and identify the book as a clinician's popular book.
+Do this whether the book agrees or disagrees; agreement is not verification. Do
+not disparage the author.
+
+Cardiovascular reversal claims, single-pattern superiority claims, supplement
+and testing suggestions, and cycle-based or hormonal nutrition claims are out of
+scope regardless of which book states them. Children's nutrition remains routed
+by `safety-and-context.md`; a paediatric book does not open paediatric scope.
+
+Editorial analysis: `editorial-clinician-books.md`.
 
 ### Environmental Working Group — Shopper's Guide
 

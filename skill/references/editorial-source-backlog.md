@@ -97,13 +97,25 @@ itself is `docs/verification-playbook.md`.
 - Protocol: <https://protocol.bryanjohnson.com/>
 - Use only for critical comparison and research questions, never as authority.
 
+## Clinician-authored popular books
+
+- Editorial card: `editorial-clinician-books.md`
+- Tracked: Kahn, *The Plant-Based Solution*; Newman, *The Plant Power Doctor*;
+  Cazorla-Lancaster, *A Parent's Guide to Intuitive Eating*.
+- Use only when the user names the book. Trace every claim to the underlying
+  guideline, review, or trial and cite that; never the book.
+- Add another title only when a user actually raises it.
+
 ## Suggested future additions
 
 Add only when demanded by real use:
 
 - food storage and foodborne-illness authorities for Poland and the EU;
 - Polish allergen and food-labeling guidance;
-- pregnancy and childhood nutrition guidelines;
+- pregnancy and childhood nutrition guidelines — `editorial-clinician-books.md`
+  records a concrete unserved case for the childhood half (a parent with a
+  metabolic marker asking what to feed their children); sourcing would come from
+  AAP, WHO/UNICEF, ESPGHAN, and the Satter Institute, not from a popular book;
 - evidence on convenience foods and dietary adherence;
 - validated behavior-change and shared-decision-making frameworks;
 - wearable validation by exact device and metric.
