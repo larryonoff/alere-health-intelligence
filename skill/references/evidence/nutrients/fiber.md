@@ -18,17 +18,20 @@ public attention than protein.
 
 ### 25–29 g per day is associated with substantially lower disease and mortality
 
-**Strength: strong** for the association; the underlying series included trials as
-well as cohorts.
+**Strength: moderate.** This matches the certainty the authors themselves assign:
+the series grades the evidence for dietary fibre as *moderate* for critical
+outcomes. A source's own GRADE rating governs the label — do not upgrade it
+because the effect size is large or the series is prominent.
 
 A Lancet series of systematic reviews and meta-analyses covering nearly 40 years
-of observational studies and clinical trials found health benefits at intakes of
-**at least 25–29 g per day**, with:
+of observational studies and clinical trials found risk reduction across critical
+outcomes was **greatest at 25–29 g per day**, with:
 
-- **15–30% lower** all-cause and cardiovascular mortality, highest versus lowest
-  intake;
-- **16–24% lower** incidence of coronary heart disease, stroke, type 2 diabetes,
-  and colorectal cancer.
+- observational data suggesting a **15–30% decrease** in all-cause and
+  cardiovascular mortality and in the incidence of coronary heart disease, stroke,
+  type 2 diabetes, and colorectal cancer;
+- clinical trials showing significantly lower body weight, systolic blood
+  pressure, and total cholesterol at higher versus lower intakes.
 
 Benefit continued to increase above 29 g/day, with no clear threshold identified.
 

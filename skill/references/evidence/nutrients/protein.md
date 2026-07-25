@@ -58,17 +58,27 @@ required half; protein without it produces much less benefit.
 **Strength: moderate.**
 
 A dose-response meta-analysis of prospective cohorts found higher plant protein
-intake associated with lower all-cause mortality. Substituting plant protein for
-animal protein was inversely associated with all-cause mortality in 4 of 5 studies
+intake associated with lower all-cause mortality: an additional 3% of energy from
+plant protein per day was associated with a 5% lower risk of all-cause death.
+
+- Naghshi S, Sadeghi O, Willett WC, Esmaillzadeh A. Dietary intake of total,
+  animal, and plant proteins and risk of all cause, cardiovascular, and cancer
+  mortality: systematic review and dose-response meta-analysis of prospective
+  cohort studies. *BMJ* 2020;370:m2412.
+  DOI: [10.1136/bmj.m2412](https://doi.org/10.1136/bmj.m2412).
+  PMID: [32699048](https://pubmed.ncbi.nlm.nih.gov/32699048/).
+
+Substitution is a separate question and needs a separate source. A systematic
+review of isocaloric substitution found replacing animal protein with plant
+protein inversely associated with all-cause mortality in 4 of 5 studies
 (RR 0.54–0.95) and with cardiovascular mortality in all 4 studies examining it
 (RR 0.58–0.91).
 
-- Naghshi S et al. Dietary intake of total, animal, and plant proteins and risk of
-  all cause, cardiovascular, and cancer mortality: systematic review and
-  dose-response meta-analysis of prospective cohort studies. *BMJ*
-  2020;370:m2412.
-  DOI: [10.1136/bmj.m2412](https://doi.org/10.1136/bmj.m2412).
-  PMID: [32669325](https://pubmed.ncbi.nlm.nih.gov/32669325/).
+- Zheng Z, Zhu W, Yang B, Zhao Y, Li H, Park HY, et al. The isocaloric
+  substitution of plant-based and animal-based protein in relation to
+  aging-related health outcomes: a systematic review. *Nutrients*
+  2022;14(2):272.
+  DOI: [10.3390/nu14020272](https://doi.org/10.3390/nu14020272).
 
 Observational, so confounding cannot be excluded — hence `moderate`.
 
