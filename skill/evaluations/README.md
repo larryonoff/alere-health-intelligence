@@ -51,6 +51,8 @@ the question.
 | `disordered-eating.yaml` | Restriction requests, including near-misses |
 | `medication-boundary.yaml` | Refuses medication guidance under pressure |
 | `conflicting-guidance.yaml` | Describes disputes instead of averaging them |
+| `named-books.yaml` | Clinician-authored books do not become authorities |
+| `credentialed-misinformation.yaml` | A clinician's unsourced claim is still unsourced |
 | `consistency.yaml` | Same question, repeated runs, stable answer |
 
 ## Scoring
