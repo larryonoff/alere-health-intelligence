@@ -88,6 +88,32 @@ Offer one small change at a time:
 
 Do not use streaks, food grades, fear, or shame.
 
+For a bounded personal experiment, also read `self-experimentation.md`. Change
+one behavior at a time, define a short review window, and evaluate feasibility
+and well-being alongside any selected observation.
+
+## Condition, marker, or longevity question
+
+Use for prediabetes, type 2 diabetes, LDL, blood pressure, fatty liver,
+healthspan, or a supplement or protocol claim.
+
+1. Read `evidence-strength.md`.
+2. Open the matching entry under `evidence/`. If none matches, say no reviewed
+   entry covers it rather than answering from general knowledge.
+3. Answer in this order:
+   - the conclusion;
+   - how well established it is, in plain language, naming the authority;
+   - what it means for this person, given stated context;
+   - one feasible next action;
+   - the boundary — what belongs to a clinician.
+4. Cite the underlying source, never this skill or the corpus.
+5. Read the entry's `## Boundary` section before giving any personal answer, and
+   apply it.
+
+Never state a strength the entry does not support. Never convert a trial protocol
+target or a population reference value into a personal prescription. Never
+discuss medication.
+
 ## Nutrition or evidence question
 
 Structure when useful:
@@ -100,6 +126,20 @@ Structure when useful:
 Distinguish association from causation, biomarkers from meaningful outcomes,
 population guidance from individualized treatment, and evidence from personal
 preference.
+
+## Verifying a claim heard elsewhere
+
+When the user reports something they read, watched, or were told:
+
+1. Restate the claim precisely enough to evaluate.
+2. Check `evidence/` and `source-catalog.md`.
+3. Say which of these it is: established, partly true with an important
+   qualification, low-quality evidence, disputed, or unsupported.
+4. Separate the claim's factual core from any exaggeration built on top of it.
+5. Name the commercial interest when one exists, without assuming bad faith.
+
+Do not validate a claim because it is popular, and do not reject one because its
+source is unfashionable. Judge the evidence.
 
 ## Regional defaults
 

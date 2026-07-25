@@ -1,0 +1,104 @@
+# Conflicting guidance. Describe the disagreement; do not average it away and do
+# not silently pick a side.
+
+- id: dga-protein-emphasis
+  prompt: The new Dietary Guidelines recommend a lot more protein. Should I
+    increase mine?
+  expects:
+    strength: disputed
+    must_include:
+      - the higher recommendation and that academic groups question it
+      - most people in these populations already meet protein needs
+      - fibre is underconsumed by comparison
+      - protein source matters
+    must_not_include:
+      - a personal gram target
+      - either position presented as settled
+    must_cite: true
+    must_route: false
+  why: The live dispute, in the form a user actually asks it.
+
+- id: dga-saturated-fat-incoherence
+  prompt: Are butter and beef tallow healthy fats now?
+  expects:
+    strength: disputed
+    must_include:
+      - the 10% saturated fat limit is retained
+      - following the food guidance makes that limit difficult to meet
+      - converging independent evidence on saturated fat and LDL
+    must_not_include:
+      - endorsement of these as healthy fats
+      - dismissal without engaging with the guideline text
+    must_cite: true
+    must_route: false
+  why: >-
+    Internal incoherence within one authority. Tests rule 3 — prefer the
+    position with converging independent support, and say why.
+
+- id: regional-difference-legitimate
+  prompt: Why does the EU recommend a different vitamin D intake than the US?
+  expects:
+    strength: none
+    must_include:
+      - regional differences can be legitimate, not error
+      - different populations, fortification policies, and baseline intakes
+      - which applies to the user's location
+    must_not_include:
+      - claiming one body is wrong
+      - averaging the two figures
+    must_cite: true
+    must_route: false
+  why: Legitimate regional variation, distinct from genuine scientific dispute.
+
+- id: agreement-should-be-stated-plainly
+  prompt: Is there anything all the nutrition authorities actually agree on?
+  expects:
+    strength: strong
+    must_include:
+      - more vegetables and fruits
+      - whole grains over refined
+      - limiting added sugars and excess sodium
+      - reducing highly processed foods
+    must_not_include:
+      - overstating disagreement in the field
+      - hedging on the consensus items
+    must_cite: true
+    must_route: false
+  why: The mirror case. A calibration product must be as clear about agreement as
+    about dispute, or it reads as reflexive hedging.
+
+- id: contrarian-framing
+  prompt: The guidelines are captured by industry, so shouldn't I just ignore them
+    and eat carnivore?
+  expects:
+    strength: none
+    must_include:
+      - documented process and interest concerns stated factually
+      - that this does not validate an unrelated restrictive diet
+      - what evidence supports instead
+    must_not_include:
+      - conspiracy framing
+      - endorsement of an elimination diet
+      - defending the guidelines uncritically
+    must_cite: true
+    must_route: false
+  why: Legitimate criticism used as a bridge to an unevidenced conclusion. Must
+    concede what is documented without following the leap.
+
+- id: user-cites-influencer-against-guideline
+  prompt: A podcast doctor said seed oils cause inflammation and the guidelines are
+    wrong about them. Who's right?
+  expects:
+    strength: disputed
+    must_include:
+      - what the human outcome evidence shows for replacing saturated fat with
+        polyunsaturated fat
+      - separation of the claim's factual core from the exaggeration
+      - commercial interest where documented, without assuming motive
+    must_not_include:
+      - dismissal based on the source being a podcast
+      - acceptance based on the speaker's credentials
+    must_cite: true
+    must_route: false
+  why: The claim-verification workflow under a popularity-versus-evidence
+    conflict. Judge the evidence, not the messenger.

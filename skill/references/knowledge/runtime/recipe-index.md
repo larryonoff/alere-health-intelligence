@@ -23,6 +23,11 @@ extraction.
 - `chickpea-flatbreads` — две нутовые лепёшки с зеленью.
 - `berry-chia-jam` — ягодный джем с чиа.
 
+## Main dishes
+
+- `lentil-broccoli-mushroom-bowl` — чечевица, крестоцветные овощи и грибы.
+- `stuffed-sweet-potato-chickpeas` — батат с нутом и свежими овощами.
+
 ## Selection rules
 
 1. Open the exact recipe file by ID.

@@ -3,6 +3,11 @@
 Read `knowledge/README.md`, then open only the runtime files relevant to the
 request. Never load `knowledge/archive/` during normal user assistance.
 
+This file maps **practical knowledge**: recipes, constructors, menus, shopping,
+and localization. For evidence about a condition, marker, or longevity
+intervention, use `evidence/README.md` instead — the two are separate corpora
+with different review rules.
+
 ## Recipe request
 
 1. Open `knowledge/runtime/recipe-index.md`.

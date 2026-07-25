@@ -3,7 +3,25 @@
 Use this catalog to locate authoritative evidence. Do not treat it as a set of
 claims to repeat without checking the linked source.
 
-Last reviewed: 2026-07-23.
+Last reviewed: 2026-07-25.
+
+## Read only the section you need
+
+This file is larger than the other references. Under a constrained context
+window, read `Usage rules` plus the one section that matches the question rather
+than the whole file.
+
+| Question | Section |
+| --- | --- |
+| A condition or laboratory marker | `Condition and marker authorities` |
+| US guidance, supplements, or an academic assessment | `United States federal and academic sources` |
+| Dietary patterns, general nutrition, activity, sleep | `Core sources` |
+| European reference values, Poland, pesticide residues | `European and regional sources` |
+| A named personal protocol or a consumer ranking | `Limited and secondary sources` |
+| How to rank two sources against each other | `Evidence hierarchy` |
+
+Reviewed claims drawn from these sources, with strength labels and citations, live
+in `evidence/`. Prefer an existing entry over re-deriving a claim from a source.
 
 ## Usage rules
 
@@ -62,6 +80,25 @@ reversal of disease. Nutrition remains the skill's primary domain. Refer users
 to qualified professionals when a request crosses into individualized medical
 care.
 
+### World Health Organization — physical activity
+
+- Guidelines:
+  <https://www.who.int/publications/i/item/9789240015128>
+
+Use for population-level physical-activity and sedentary-behaviour guidance.
+Adapt activity to ability, pregnancy, chronic conditions, disability, injury,
+and current fitness. Do not convert population targets into an individualized
+training prescription.
+
+### American Academy of Sleep Medicine and Sleep Research Society
+
+- Adult sleep-duration consensus:
+  <https://aasm.org/resources/pdf/adultsleepdurationconsensus.pdf>
+
+Use for the general importance of adequate sleep opportunity in healthy adults.
+Do not diagnose sleep disorders from wearable scores or assume one bedtime,
+meal cutoff, device, or room setup is universally optimal.
+
 ### World Health Organization
 
 - Healthy diet:
@@ -77,6 +114,134 @@ population-level prevention.
 Check the specific linked WHO guideline before giving a numerical target. Do
 not assume that a global population target is automatically an individualized
 clinical target.
+
+## United States federal and academic sources
+
+### Dietary Guidelines for Americans 2025–2030
+
+- Guidelines: <https://www.dietaryguidelines.gov/>
+- Scientific Report of the 2025 Dietary Guidelines Advisory Committee:
+  <https://www.dietaryguidelines.gov/2025-advisory-committee-report>
+
+Released 7 January 2026. **The guidelines depart from the Advisory Committee's
+consensus report on several points, and leading academic groups dispute parts of
+the result.** Do not cite the DGA as settled consensus without checking
+`evidence/guidelines/conflicting-guidance.md` first. Cite the areas of agreement
+freely; flag the disputed areas as disputed.
+
+### NIH Office of Dietary Supplements
+
+- Fact sheets: <https://ods.od.nih.gov/factsheets/list-all/>
+- API: <https://ods.od.nih.gov/api/>
+- Dietary Supplement Label Database: <https://dsld.od.nih.gov/>
+- PubMed Dietary Supplement Subset:
+  <https://ods.od.nih.gov/Research/PubMed_Dietary_Supplement_Subset.aspx>
+
+The primary authority for supplement questions: ingredient, dose, interaction, and
+safety information, maintained by NIH and available programmatically. Prefer it
+over any commercial or advocacy source. Record API terms and attribution
+requirements before programmatic use.
+
+Fact sheets state population reference intakes and upper limits. They are not
+individual prescriptions — dosing remains out of scope per
+`safety-and-context.md`.
+
+### National Academies of Sciences, Engineering, and Medicine
+
+- Dietary Reference Intakes and nutrition reports: <https://nap.nationalacademies.org/>
+- Reviews of the dietary guidelines process:
+  <https://www.dietaryguidelines.gov/national-academies>
+
+Use for the US reference-value framework (EAR, RDA, AI, UL) and for independent
+assessment of federal nutrition policy.
+
+### Harvard T.H. Chan School of Public Health — Nutrition Source
+
+- <https://nutritionsource.hsph.harvard.edu/>
+
+Strong for accessible, research-forward synthesis and for independent critique of
+federal guidance. It is an academic communication resource, not a guideline body:
+cite the underlying studies it references for a precise or high-risk claim.
+Copyright terms for its illustrations are noted in the European sources section
+below.
+
+### Stanford Nutrition Studies Research Group
+
+- <https://med.stanford.edu/nutrition/>
+
+Use for independent academic assessment, particularly of dietary-pattern trials
+and federal guidance.
+
+### PubMed Central Open Access subset
+
+- OA Web Service API: <https://pmc.ncbi.nlm.nih.gov/tools/oa-service/>
+
+Full-text open-access biomedical literature in JATS XML, suitable for programmatic
+retrieval. Same labeling rule as Europe PMC: an individual article is unreviewed
+primary literature, not guidance.
+
+## Condition and marker authorities
+
+Use these for questions about a specific condition or laboratory marker. Reviewed
+claims drawn from them, with strength labels and citations, live in
+`evidence/`. Open the underlying guideline before quoting a number.
+
+### American Diabetes Association — Standards of Care
+
+- Current standards:
+  <https://diabetesjournals.org/care/issue/49/Supplement_1>
+- Prevention or delay of diabetes (2026):
+  <https://diabetesjournals.org/care/article/49/Supplement_1/S50/163924/>
+
+**Revised annually.** Any numerical target, threshold, or recommendation quoted
+from it must come from the current supplement. Entries anchored to ADA carry an
+annual review cycle.
+
+### ADA / EASD — remission of type 2 diabetes
+
+- Consensus report: Riddle MC et al. *Diabetes Care* 2021;44(10):2438–2444.
+  DOI: [10.2337/dci21-0034](https://doi.org/10.2337/dci21-0034)
+
+Defines remission as HbA1c <6.5% sustained ≥3 months without glucose-lowering
+pharmacotherapy. Use this definition rather than "reversal" or "cure."
+
+### American Heart Association / American College of Cardiology
+
+- Hypertension guideline (2025), summary and implications:
+  <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12379440/>
+- Dietary approaches for elevated LDL-C (2025):
+  <https://www.acc.org/Latest-in-Cardiology/Articles/2025/07/01/01/Prioritizing-Health-Dietary-Approaches-For-Elevated-LDL-C>
+
+Use for blood-pressure and lipid guidance. Diagnostic thresholds are guideline
+definitions, not individualized targets.
+
+### American Gastroenterological Association / EASL — steatotic liver disease
+
+- AGA lifestyle modification guidance:
+  <https://gastro.org/clinical-guidance/lifestyle-modification-using-diet-and-exercise-to-achieve-weight-loss-in-the-management-of-nonalcoholic-fatty-liver-disease-nafld/>
+- EASL–EASD–EASO MASLD guidelines. *J Hepatol* 2024.
+  DOI: [10.1016/j.jhep.2024.04.031](https://doi.org/10.1016/j.jhep.2024.04.031)
+- Nomenclature consensus: Rinella ME et al. *Hepatology* 2023;78(6):1966–1986.
+  DOI: [10.1097/HEP.0000000000000520](https://doi.org/10.1097/HEP.0000000000000520)
+
+MASLD/MASH replaced NAFLD/NASH in 2023. Note the terminology change when citing
+older literature.
+
+### Cochrane Library
+
+- <https://www.cochranelibrary.com/>
+
+Use for systematic reviews of specific interventions. Check the review date and
+whether it has been superseded.
+
+### Europe PMC — primary literature
+
+- REST API: <https://europepmc.org/RestfulWebService>
+
+Use for a study the user names, a topic outside the reviewed corpus, or checking
+whether guidance has been superseded. Results are **unreviewed primary
+literature** and must be labeled as such — an individual study is not a
+guideline. Record attribution and rate-limit terms before programmatic use.
 
 ## European and regional sources
 
@@ -134,6 +299,32 @@ Prefer current Polish and EU monitoring when answering questions about foods
 sold in Poland.
 
 ## Limited and secondary sources
+
+### Blueprint Protocol — personal N-of-1 case study
+
+- Protocol: <https://protocol.bryanjohnson.com/>
+- Content license:
+  <https://creativecommons.org/licenses/by-nc/4.0/>
+
+Use only when the user asks about this named protocol or when evaluating how a
+personal protocol mixes ordinary habits, self-tracking, commercial products,
+surrogate biomarkers, and experimental interventions.
+
+Do not use it as clinical guidance or as a source of personal calorie, macro,
+meal-timing, fasting, supplement, medication, sauna, laboratory, or biomarker
+prescriptions. Its results come from one highly monitored individual exposed
+to many simultaneous interventions, so causality and general applicability
+cannot be inferred.
+
+The site includes products sold or linked by the protocol owner and describes
+on-label, off-label, unlicensed, and research-use-only interventions. Treat
+commercial claims, testimonials, biological-age claims, and personal biomarker
+changes as hypotheses requiring independent verification.
+
+The site's CC BY-NC 4.0 license requires attribution and prohibits commercial
+reuse under its terms. Do not copy its branded recipes, text, graphics, or
+protocol into a commercial product. Independently express ordinary public
+nutrition principles and support them with authoritative sources.
 
 ### Environmental Working Group — Shopper's Guide
 
