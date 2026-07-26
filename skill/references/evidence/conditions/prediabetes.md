@@ -96,6 +96,10 @@ supported behavior change — not a diet handed over once.
 Practical reading: the effective ingredients were sustained modest weight loss,
 regular activity, and ongoing support. No specific branded diet was required.
 
+- Knowler WC et al. Reduction in the incidence of type 2 diabetes with lifestyle
+  intervention or metformin. *N Engl J Med* 2002.
+  DOI: [10.1056/NEJMoa012512](https://doi.org/10.1056/NEJMoa012512).
+
 ## Boundary
 
 - Diagnosis, glucose testing, and interpretation of results belong to a

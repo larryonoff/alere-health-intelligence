@@ -84,16 +84,23 @@ Practical consequence: at 55–60°N a supplement or fortified food is the reali
 route for several months a year. Advising sun exposure alone for that period is not
 actionable.
 
-### Sunscreen is not the reason people are deficient
+- Nordic Nutrition Recommendations 2023:
+  <https://pub.norden.org/nord2023-003/>
 
-**Strength: moderate.**
+### Sunscreen evidence does not justify abandoning sun protection
 
-Laboratory sun-protection factors are derived from application rates far heavier than
-real-world use, and field studies consistently find that people using sunscreen do
-not develop lower vitamin D status — in part because sunscreen use accompanies more
-time outdoors. The advice to leave children unprotected in the sun to raise vitamin D
-trades a documented skin-cancer risk against a deficiency that a supplement resolves
-directly. Do not repeat it.
+**Strength: disputed.**
+
+Experimental studies show that sunscreen can reduce cutaneous synthesis. A 2019
+review found little evidence of lower 25(OH)D in real-life use, while a 2025
+meta-analysis reported a small reduction. Neither result justifies advising
+children or adults to abandon sun protection to raise vitamin D.
+
+- Neale RE et al. The effect of sunscreen on vitamin D. *Br J Dermatol* 2019.
+  DOI: [10.1111/bjd.17980](https://doi.org/10.1111/bjd.17980).
+- Gatta E, Cappelli C. Sunscreen and 25-Hydroxyvitamin D Levels. *Endocr Pract*
+  2025.
+  DOI: [10.1016/j.eprac.2025.03.014](https://doi.org/10.1016/j.eprac.2025.03.014).
 
 ### High-dose supplementation is not a general recommendation
 
@@ -108,6 +115,10 @@ accurate either; it is above what guidance supports without being an acute poiso
 State the reference values and the upper limit. Do not select a dose for the
 individual: appropriate dosing depends on baseline status, body weight, season,
 latitude, and medication, and correcting a measured deficiency is clinical work.
+
+- EFSA NDA Panel. Scientific opinion on the tolerable upper intake level for
+  vitamin D. *EFSA Journal* 2023.
+  DOI: [10.2903/j.efsa.2023.8145](https://doi.org/10.2903/j.efsa.2023.8145).
 
 ## What to say
 

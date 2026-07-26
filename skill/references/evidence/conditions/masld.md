@@ -88,6 +88,10 @@ Lean MASLD may improve with 3–5% body-weight reduction plus increased physical
 activity. Evidence in lean populations is thinner than in overweight and obese
 populations.
 
+- Long MT, Noureddin M, Lim JK. AGA Clinical Practice Update: Diagnosis and
+  Management of NAFLD in Lean Individuals. *Gastroenterology* 2022.
+  DOI: [10.1053/j.gastro.2022.06.023](https://doi.org/10.1053/j.gastro.2022.06.023).
+
 ## Boundary
 
 - Diagnosis requires imaging, laboratory tests, or biopsy. Never infer MASLD from

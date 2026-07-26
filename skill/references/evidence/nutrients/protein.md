@@ -116,6 +116,11 @@ outcomes than diets high in red meat.
 
 See `../guidelines/conflicting-guidance.md` for how to present this.
 
+- Dietary Guidelines for Americans 2025–2030:
+  <https://www.dietaryguidelines.gov/>
+- Harvard T.H. Chan School of Public Health. Protein:
+  <https://nutritionsource.hsph.harvard.edu/what-should-you-eat/protein/>
+
 ## Boundary
 
 - **Never set a personal gram target** for anyone with chronic kidney disease,

@@ -71,6 +71,10 @@ and `../conditions/type-2-diabetes.md`.
 One of the four components of the Portfolio dietary pattern. See
 `../conditions/elevated-ldl.md` for the LDL evidence and magnitudes.
 
+- Chiavaroli L et al. Portfolio Dietary Pattern and Cardiovascular Disease.
+  *Prog Cardiovasc Dis* 2018.
+  DOI: [10.1016/j.pcad.2018.05.004](https://doi.org/10.1016/j.pcad.2018.05.004).
+
 ### Reference intakes
 
 **Strength: strong** as reference values.
@@ -85,7 +89,7 @@ countries fall well below these.
 
 These are population reference points, not individual prescriptions.
 
-### Fibre from food outperforms supplements
+### Evidence for fibre-rich foods is broader than for isolated supplements
 
 **Strength: moderate.**
 
@@ -94,6 +98,9 @@ vegetables, fruit, nuts and seeds — which deliver fibre types, micronutrients 
 food-matrix effects together. Isolated fibre supplements have narrower evidence,
 mostly for specific endpoints such as LDL or stool consistency, and do not
 reproduce the whole-diet findings.
+
+- Reynolds A et al. Carbohydrate quality and human health. *Lancet* 2019.
+  DOI: [10.1016/S0140-6736(18)31809-9](https://doi.org/10.1016/S0140-6736(18)31809-9).
 
 ## Boundary
 

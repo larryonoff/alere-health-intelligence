@@ -54,6 +54,10 @@ spirulina, chlorella, nutritional yeast (unless fortified), tempeh, or other
 fermented foods supply adequate B12. Analogues in some algae are not
 bioavailable cobalamin and can register on assays without providing activity.
 
+- EFSA NDA Panel. Dietary reference values for cobalamin (vitamin B12).
+  *EFSA Journal* 2015.
+  DOI: [10.2903/j.efsa.2015.4150](https://doi.org/10.2903/j.efsa.2015.4150).
+
 ### Standard dosing, and why oral doses are large
 
 **Strength: moderate.**
@@ -103,17 +107,6 @@ was cardiac patients in a country without folic-acid fortification, not healthy
 people on plant-based diets. It does not show that B12 supplementation harms vegans.
 It does refute the categorical claim that no adverse effect is possible.
 
-### Elevated serum B12 is usually a marker, not a cause
-
-**Strength: moderate.**
-
-Observational associations between high serum B12 and mortality are substantially
-confounded by reverse causation: elevated levels flag liver and kidney disease and
-some malignancies. Associations have attenuated or disappeared after adjustment for
-liver function. Do not present these cohort findings as evidence that
-supplementation is dangerous — that would be the mirror-image error of the claim
-above.
-
 ## What to say
 
 1. Lead with the requirement: a reliable source is mandatory, not optional. If the
@@ -142,4 +135,4 @@ above.
   urgent clinical territory, not a nutrition conversation.
 
 Related: `supplements.md`, `../guidelines/credentialed-claims-without-citations.md`,
-`../../safety-and-context.md`, `../../evidence-strength.md`.
+`../../safety-and-context.md`, `../../policy/evidence-labels.md`.

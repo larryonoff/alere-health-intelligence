@@ -93,6 +93,9 @@ between the guidelines and their academic critics — see
 `../guidelines/conflicting-guidance.md`. Critics note the guidance lacks
 specificity about which foods and why.
 
+- Dietary Guidelines for Americans 2025–2030:
+  <https://www.dietaryguidelines.gov/>
+
 ## Boundary
 
 - Do not use "ultra-processed" as a moral category. `SKILL.md` prohibits clean,

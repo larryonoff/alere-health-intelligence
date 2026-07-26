@@ -39,21 +39,18 @@ US, which is a separate matter from efficacy.
 
 **Strength: insufficient.**
 
-Poor oral bioavailability. Meta-analyses show no consistent benefit for
-cardiovascular disease, diabetes, cancer, or cognitive decline in humans, despite
-extensive preclinical work.
+Oral bioavailability is low. Human trials span many indications, but a 2024
+systematic review found no conclusive clinical evidence supporting use in a
+health-care setting and called for larger, higher-quality trials.
 
 The resveratrol story is the canonical example of mechanism and animal data
 failing to translate. Useful to cite when explaining why mechanism is not
 evidence.
 
-### General pattern for the supplement category
-
-**Strength: insufficient** across the category.
-
-Most anti-aging products are sold on theoretical mechanism and animal data. Where
-human trials exist, effects are typically modest or absent. Apply
-`../../evidence-strength.md` rule 5: mechanism is not evidence.
+- Brown K et al. Resveratrol for the Management of Human Health: How Far Have We
+  Come? *Int J Mol Sci* 2024.
+  DOI: [10.3390/ijms25020747](https://doi.org/10.3390/ijms25020747).
+  PMID: [38255828](https://pubmed.ncbi.nlm.nih.gov/38255828/).
 
 ## Drugs
 
@@ -80,6 +77,10 @@ outside scope entirely.
 Never discuss dosing, sourcing, or protocols. This falls under level 4
 (experimental intervention) of `../../self-experimentation.md`, which the skill
 does not recommend.
+
+- National Institute on Aging. January 2021 Director's Status Report: mTOR
+  inhibition and aging workshop.
+  <https://www.nia.nih.gov/about/naca/january-2021-directors-status-report>
 
 ## Energy restriction and fasting
 
@@ -155,7 +156,7 @@ biological-age optimization outright.
 Individual protocols combining many simultaneous interventions cannot establish
 causality for any single component, regardless of how thoroughly the individual is
 monitored. See `../../editorial-blueprint-protocol.md` and the limited-sources
-section of `../../source-catalog.md`.
+section of `../../policy/source-selection.md`.
 
 Separate, always: the person's reported routine; evidence for each component;
 uncertainty and applicability; commercial interest; and cost and burden.

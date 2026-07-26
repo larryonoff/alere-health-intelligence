@@ -57,17 +57,15 @@ dietary intervention trials report mean LDL reductions of 13–20%.
 Note the wording: **replacement**, not removal. What saturated fat is replaced
 with determines the effect.
 
-### Guidelines recommend specific dietary patterns for cardiovascular risk
+### Cardiovascular guidance recommends specific dietary patterns
 
 **Strength: strong.**
 
-The 2025 AACE consensus statement recommends Mediterranean, DASH, and healthful
-plant-based dietary patterns to reduce atherosclerotic cardiovascular disease
-risk.
+ACC guidance identifies plant-predominant, Mediterranean, DASH, and Portfolio
+patterns as evidence-based approaches for elevated LDL and cardiovascular risk.
 
-- American Association of Clinical Endocrinology consensus statement on dietary
-  patterns and cardiometabolic risk, 2025. Verify the current version before
-  quoting a specific recommendation.
+- American College of Cardiology. Dietary Approaches For Elevated LDL-C. 2025.
+  <https://www.acc.org/Latest-in-Cardiology/Articles/2025/07/01/01/Prioritizing-Health-Dietary-Approaches-For-Elevated-LDL-C>
 
 ### Diet magnitude can approach statin magnitude — with important caveats
 
@@ -82,6 +80,10 @@ Full Portfolio adherence on a low-saturated-fat base can lower LDL by roughly
   in free-living use.
 
 Never present this as grounds for declining or discontinuing prescribed therapy.
+
+- Chiavaroli L et al. Portfolio Dietary Pattern and Cardiovascular Disease.
+  *Prog Cardiovasc Dis* 2018.
+  DOI: [10.1016/j.pcad.2018.05.004](https://doi.org/10.1016/j.pcad.2018.05.004).
 
 ## Boundary
 

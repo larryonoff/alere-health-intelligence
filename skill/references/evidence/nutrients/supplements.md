@@ -64,6 +64,9 @@ bariatric surgery or with malabsorption.
 Each of these is a clinical determination requiring an individual assessment. State
 that supplementation exists and is appropriate in that situation, and route.
 
+- NIH Office of Dietary Supplements. Health professional fact sheets:
+  <https://ods.od.nih.gov/factsheets/list-all/>
+
 ### More is not better, and upper limits exist
 
 **Strength: strong.**
@@ -86,6 +89,9 @@ affect levothyroxine absorption; high-dose fish oil and anticoagulants.
 
 Check ODS for the specific pair. Do not reason about an interaction from mechanism.
 
+- NIH Office of Dietary Supplements. Dietary Supplements: What You Need to Know.
+  <https://ods.od.nih.gov/pubs/ds_whatyouneedtoknow.pdf>
+
 ### Regulation differs from medicines
 
 **Strength: strong.**
@@ -96,6 +102,11 @@ voluntary. In the EU, food supplements are regulated as food, not medicine.
 
 Practical consequence: product claims are not evidence, and a product's presence on
 a shelf implies nothing about efficacy.
+
+- US Food and Drug Administration. FDA 101: Dietary Supplements.
+  <https://www.fda.gov/consumers/consumer-updates/fda-101-dietary-supplements>
+- Directive 2002/46/EC on food supplements:
+  <https://eur-lex.europa.eu/eli/dir/2002/46/2024-07-17/eng>
 
 ## Boundary
 
@@ -131,4 +142,4 @@ a measurable value" from "improves health," and redirect toward what has evidenc
 rather than only declining.
 
 Related: `../longevity/unproven-interventions.md`,
-`../../safety-and-context.md`, `../../source-catalog.md`.
+`../../safety-and-context.md`, `../../policy/source-selection.md`.

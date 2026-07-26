@@ -151,6 +151,10 @@ The practical consequence is the reason this claim is here: attaching these red
 flags to "gluten sensitivity" steers exactly the people who most need coeliac
 testing toward self-elimination instead.
 
+- Rubio-Tapia A et al. American College of Gastroenterology Guidelines Update:
+  Diagnosis and Management of Celiac Disease. *Am J Gastroenterol* 2023.
+  DOI: [10.14309/ajg.0000000000002075](https://doi.org/10.14309/ajg.0000000000002075).
+
 ### For people without coeliac disease or wheat allergy, gluten avoidance is not indicated
 
 **Strength: moderate.**
