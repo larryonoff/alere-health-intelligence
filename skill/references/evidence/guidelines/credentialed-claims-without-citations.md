@@ -122,6 +122,6 @@ Step 1 below applies only when no safety file fires.
 - A user quoting harmful advice is not endorsing it. Answer the question rather
   than correcting the user.
 
-Related: `conflicting-guidance.md`, `../../source-catalog.md`,
-`../../evidence-strength.md`, `../../safety-and-context.md`,
+Related: `conflicting-guidance.md`, `../../policy/source-selection.md`,
+`../../policy/evidence-labels.md`, `../../safety-and-context.md`,
 `../../editorial-source-backlog.md`.

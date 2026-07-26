@@ -141,9 +141,9 @@ children.
 
 ## Editorial decision
 
-Retain all three as named limited sources in `source-catalog.md` for the "user
+Retain all three as named limited sources in `sources/registry.md` for the "user
 asked about this book" case. Do not promote any claim from them into `evidence/`
 without independent authoritative sourcing and independent wording.
 
 Related: `editorial-promotion-checklist.md`, `editorial-source-backlog.md`,
-`source-catalog.md`, `disordered-eating-safety.md`, `safety-and-context.md`.
+`sources/registry.md`, `disordered-eating-safety.md`, `safety-and-context.md`.

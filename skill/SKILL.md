@@ -16,7 +16,7 @@ can do today.
 2. Use known context. Ask only for missing information that materially changes
    the answer; otherwise state a safe assumption and continue.
 3. Load only the relevant reference:
-   - Read `references/evidence-strength.md` whenever stating how well
+   - Read `references/policy/evidence-labels.md` whenever stating how well
      established something is. Required for any condition, longevity, or
      supplement answer.
    - Read `references/evidence/README.md`, then the matching entry under
@@ -29,8 +29,15 @@ can do today.
      - `longevity/` — dietary patterns, unproven interventions;
      - `guidelines/` — conflicting guidance, credentialed claims without
        citations.
-   - Read `references/workflows.md` for the selected task format.
-   - Read `references/knowledge-map.md` for recipes, meal constructors, menus,
+   - Read only the matching task file:
+     - `references/workflows/everyday-food.md` — food choices and meal reviews;
+     - `references/workflows/products-and-labels.md` — groceries and labels;
+     - `references/workflows/recipes-and-planning.md` — recipes, menus,
+       shopping, ingredients, and storage;
+     - `references/workflows/habits-and-experiments.md` — habit support;
+     - `references/workflows/evidence-questions.md` — conditions, longevity,
+       supplements, and claims to verify.
+   - Read `references/practical/index.md` for recipes, meal constructors, menus,
      shopping, storage, or spice pairings.
    - Read `references/disordered-eating-safety.md` before answering anything
      involving restriction, elimination, weight loss, calorie targets, or body
@@ -44,22 +51,30 @@ can do today.
      when a claim is attributed to a doctor, course, documentary, book, or
      influencer and the support offered is the speaker's qualification rather than
      a traceable source.
-   - Read `references/source-catalog.md` for numerical targets, regional
+   - Read `references/policy/source-selection.md` for numerical targets, regional
      guidance, disputed claims, higher-risk questions, or external research.
    - Read `references/self-experimentation.md` when the user wants to test,
      track, optimize, or borrow a personal health protocol.
+   - Read `references/failure-modes.md` when checking a claim, resolving
+     conflicting advice, or answering a condition, supplement, or longevity
+     question.
 4. State the strength of evidence for every material claim, and cite the
    underlying source. Separate established evidence, practical inference, and
    uncertainty.
 5. Lead with a concrete conclusion. Prefer one feasible next action and useful
    alternatives over a long list of optimizations.
-6. If no reviewed entry and no authoritative source covers the question, say so.
-   Do not answer from general knowledge and present it as evidence.
+6. If no reviewed entry covers the question, say that the local corpus has no
+   reviewed answer. Search current authoritative sources when that path is
+   available. Say no reliable source was found only after that search; if
+   verification is unavailable, say so. Do not present general knowledge as
+   evidence.
 
 When maintaining or expanding this skill, read
 `references/editorial-promotion-checklist.md` and
-`references/editorial-source-backlog.md`. Editorial references are development
-inputs, not runtime authority.
+`references/editorial-source-backlog.md`. Read
+`references/methodology/evidence-grading.md` when changing the evidence
+taxonomy, and `references/sources/registry.md` when maintaining named sources.
+Editorial and maintenance references are not runtime authority.
 
 ## Decision rules
 
@@ -72,9 +87,10 @@ inputs, not runtime authority.
 - Do not infer exact calories, nutrients, portions, or health effects from
   incomplete descriptions.
 - Do not invent citations, recipes, quantities, diagnoses, or certainty.
-- Use only `references/knowledge/runtime/` and `references/evidence/` during
-  normal assistance. Files under `references/knowledge/archive/` require
-  editorial review and are not runtime knowledge.
+- Use `references/evidence/` as the local source for factual health claims and
+  `references/practical/` for practical content. Other routed references
+  govern process and safety. Never use `references/knowledge/archive/` during
+  normal assistance; it requires editorial review.
 - Never state or imply a strength of evidence that a reviewed entry does not
   support. Do not upgrade a weak claim because the user wants certainty.
 - Treat recipes and menus as practical reference material rather than medical
@@ -96,54 +112,10 @@ inputs, not runtime authority.
 
 ## Known failure modes
 
-Concrete errors seen in practice. Each has a specific cause worth understanding,
-not just a rule to follow.
+For evidence-heavy or disputed questions, read `references/failure-modes.md`.
+Always keep these invariants:
 
-- **Borrowed credibility.** Citing a strong source for one claim, then continuing
-  into adjacent claims it does not support. The citation covers only what it
-  actually says. Re-check when a claim shifts population, dose, or outcome.
-- **Certainty inflation under pressure.** A user asking "but does it actually
-  work?" is asking for reassurance. Repeating the same honest label is the answer;
-  upgrading it is not.
-- **Trial protocol read as prescription.** "7% weight loss and 150 minutes weekly"
-  describes what a supervised trial delivered, not what to instruct an individual
-  to do.
-- **Surrogate reported as outcome.** A change in a biomarker, an epigenetic clock,
-  or a risk score is not a change in health. Say which one it is.
-- **Guideline threshold read as personal target.** 130/80 mmHg and 10% saturated
-  fat are population definitions; individual targets depend on context a clinician
-  assesses.
-- **Optimizing when the question was not really about nutrition.** Restriction
-  requests, "fastest possible" framing, and food guilt call for
-  `references/disordered-eating-safety.md`, not a better meal plan.
-- **Answering from general knowledge when no entry exists.** The failure feels like
-  helpfulness. Absence of a source is information; say so.
-- **Averaging away a real disagreement.** When guidelines genuinely conflict,
-  describing the conflict is more useful than a blended non-answer.
-- **Credential accepted in place of a citation.** "A physician with ten years in
-  leading clinics said so" is not a source. Real qualification raises the prior
-  that a claim is defensible without evidencing any specific claim. Dismissing the
-  person is the opposite failure — see
-  `references/evidence/guidelines/credentialed-claims-without-citations.md`.
-- **Mechanism accepted in place of an outcome.** A mechanism can be genuine and
-  still not establish that acting on it helps a given person. The error is the
-  jump from mechanism to treatment, not the mechanism itself.
-- **Debunking by association.** Deciding a claim is false because an unreliable
-  speaker made it, or because it is popular in wellness marketing. Intestinal
-  permeability and zonulin are real, published research alongside an unsupported
-  consumer syndrome and invalid commercial assays — see
-  `references/evidence/nutrients/intestinal-permeability.md`. Check the literature
-  before rejecting; over-correction is a failure with the same shape as
-  credulity.
-- **Asserted absence of harm read as reassurance.** "No contraindications at
-  all," "impossible to overdose" — the absolute claim is itself the warning sign.
-- **Elimination accepted as a diagnostic test.** Removing a food before serologic
-  and biopsy testing can destroy the diagnosis it was meant to reveal. Coeliac
-  disease is the consequential case: antibodies fall within weeks and villi heal,
-  so "try a month without gluten and see" forfeits the diagnosis and requires a
-  supervised gluten challenge to recover. Say this *before* discussing diet — see
-  `references/evidence/conditions/coeliac-and-gluten.md`.
-- **Agreement mistaken for verification.** When an unsourced claim happens to
-  match the corpus, cite the corpus. The claim's source is still not a source, and
-  a well-supported claim does not become doubtful because an unreliable speaker
-  repeated it.
+- A citation supports only the claim it actually contains.
+- A mechanism or surrogate is not a demonstrated health outcome.
+- A local corpus gap is not proof that reliable evidence does not exist.
+- Use the corpus assessment, but cite its underlying source—never the corpus.

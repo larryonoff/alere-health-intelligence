@@ -3,7 +3,7 @@
 Curated, strength-labeled evidence entries. This is Tier A of the hybrid corpus:
 local, authored, reviewed before use, available offline.
 
-Read `../evidence-strength.md` first for what each strength label means.
+Read `../policy/evidence-labels.md` first for what each strength label means.
 
 ## What belongs here
 
@@ -22,7 +22,7 @@ Each file states, for every material claim:
 
 - Therapeutic plans, protocols, dosing, or medication guidance.
 - Claims without a resolvable source.
-- Recipes and menus — those live in `../knowledge/runtime/`.
+- Recipes and menus — those live in `../practical/`.
 - Anything not promoted through `../editorial-promotion-checklist.md`.
 
 ## Directory layout

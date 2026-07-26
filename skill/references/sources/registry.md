@@ -1,7 +1,9 @@
-# Nutrition and Lifestyle Source Catalog
+# Nutrition and Lifestyle Source Registry
 
-Use this catalog to locate authoritative evidence. Do not treat it as a set of
-claims to repeat without checking the linked source.
+This is the single source registry for both runtime source selection and
+editorial verification. Use it to locate authoritative evidence and the tools
+needed to verify identifiers. Do not treat it as a set of claims to repeat
+without checking the linked source.
 
 Last reviewed: 2026-07-25.
 
@@ -19,6 +21,8 @@ than the whole file.
 | European reference values, Poland, pesticide residues | `European and regional sources` |
 | A named personal protocol, popular book, or consumer ranking | `Limited and secondary sources` |
 | How to rank two sources against each other | `Evidence hierarchy` |
+| How to verify a DOI, PMID, or full-text number | `Identifier and literature APIs` |
+| A publisher blocks automated access | `Access notes and workarounds` |
 
 Reviewed claims drawn from these sources, with strength labels and citations, live
 in `evidence/`. Prefer an existing entry over re-deriving a claim from a source.
@@ -36,6 +40,73 @@ in `evidence/`. Prefer an existing entry over re-deriving a claim from a source.
 6. Cite the underlying source rather than this catalog.
 7. Record uncertainty when reputable sources disagree or evidence is
    observational, indirect, or incomplete.
+
+## Identifier and literature APIs
+
+Use these routes to confirm that an identifier points to the cited paper and,
+where possible, that the paper actually contains the attributed result.
+
+### Crossref REST API
+
+- Base: `https://api.crossref.org/`
+- Single work: `https://api.crossref.org/works/{DOI}`
+- Documentation:
+  <https://www.crossref.org/documentation/retrieve-metadata/rest-api/>
+
+Use for DOI metadata and as the first fallback when a publisher page blocks
+automated access. A metadata match confirms the paper identity, not necessarily
+a numerical result in its full text.
+
+### NCBI E-utilities
+
+- PMID summary:
+  `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?db=pubmed&id={PMIDs}&retmode=json`
+- Documentation: <https://www.ncbi.nlm.nih.gov/books/NBK25501/>
+
+Batch PMIDs when checking for transposed digits so titles can be compared
+side-by-side.
+
+### PMC ID Converter
+
+- `https://pmc.ncbi.nlm.nih.gov/tools/idconv/api/v1/articles/?ids={IDs}&format=json`
+
+Use to map DOI, PMID, and PMCID identifiers.
+
+### Europe PMC
+
+- Base: `https://www.ebi.ac.uk/europepmc/webservices/rest/`
+- Documentation: <https://europepmc.org/RestfulWebService>
+- DOI search: `…/search?query=DOI:"{DOI}"&resultType=core&format=json`
+- Full text: `…/{PMCID}/fullTextXML`
+
+Use full-text XML to confirm a number in the results when an open-access version
+exists. Search results remain unreviewed literature, not guidance.
+
+### PubMed and PMC Open Access
+
+- PubMed: <https://pubmed.ncbi.nlm.nih.gov/>
+- PMC OA service: <https://pmc.ncbi.nlm.nih.gov/tools/oa-service/>
+
+Prefer APIs for scripted identifier checks. Use the web interface for manual
+author and topic searches.
+
+## Nutrition literature routes
+
+For nutrition mechanisms, methods, and emerging questions, useful Nutrition
+Society journals include:
+
+| Journal | Best use |
+| --- | --- |
+| [British Journal of Nutrition](https://www.cambridge.org/core/journals/british-journal-of-nutrition) | Human and mechanistic nutrition research |
+| [Public Health Nutrition](https://www.cambridge.org/core/journals/public-health-nutrition) | Epidemiology, behaviour, food systems |
+| [Nutrition Research Reviews](https://www.cambridge.org/core/journals/nutrition-research-reviews) | Critical and systematic reviews |
+| [Proceedings of the Nutrition Society](https://www.cambridge.org/core/journals/proceedings-of-the-nutrition-society) | Symposium papers and conference abstracts |
+
+Confirm the species and publication type. A conference abstract does not carry
+the evidentiary weight of a peer-reviewed full paper.
+
+When a claim is attributed to a named researcher, search the researcher's
+peer-reviewed work. A trade book, course, or credential is not itself evidence.
 
 ## Core sources
 
@@ -395,6 +466,19 @@ Do not use testimonials or marketing claims as efficacy evidence.
 
 ## Maintenance
 
-Review this catalog at least every 12 months and whenever a linked organization
-publishes a major guideline update. Check links, revision dates, changed
-recommendations, and all attribution, reuse, licensing, and mounting terms.
+Review this registry at least every 12 months and whenever a linked organization
+publishes a major guideline update or an API path stops working. Check links,
+revision dates, access status, changed recommendations, and all attribution,
+reuse, licensing, and mounting terms.
+
+### Access notes and workarounds
+
+As last checked on 2026-07-25, automated requests could receive `403` from
+Cochrane Library, MDPI, and `diabetesjournals.org`. A `403` is not evidence that
+a source is absent or invalid. Confirm metadata through Crossref, NCBI, or
+Europe PMC and use an open full-text route when a specific result must be
+verified.
+
+A paywalled abstract can confirm paper identity and broad conclusions, but may
+be insufficient to attribute an exact number. If the relevant results section
+cannot be inspected, do not attribute the number.

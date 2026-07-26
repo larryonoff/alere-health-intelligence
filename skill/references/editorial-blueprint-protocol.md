@@ -24,7 +24,7 @@ Promote only after independent support and independent wording:
 - keep movement, sleep opportunity, nutrition, and social connection visible
   as separate lifestyle domains.
 
-These concepts are already partly represented in `workflows.md` and
+These concepts are already partly represented in `workflows/` and
 `self-experimentation.md`.
 
 ## Content not approved for runtime
@@ -67,6 +67,6 @@ These concepts are already partly represented in `workflows.md` and
 
 ## Editorial decision
 
-Keep Blueprint in `source-catalog.md` as a named limited source. Do not copy its
+Keep Blueprint in `sources/registry.md` as a named limited source. Do not copy its
 content into runtime. Create original recipes only from ordinary culinary ideas
 and support health claims through independent authorities.

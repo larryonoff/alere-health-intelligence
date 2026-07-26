@@ -6,8 +6,9 @@ runtime knowledge.
 Verify the claim **before** running this checklist. The procedure — how to search,
 how to confirm an identifier actually supports its claim, and how to choose a
 strength label — is `docs/verification-playbook.md`, with the source lookup table
-in `docs/source-registry.md`. Both are repository documentation, not runtime
-references.
+in `skill/references/sources/registry.md`. The playbook is editorial procedure;
+the registry is the single source inventory shared by runtime selection and
+maintenance.
 
 ## 1. Define the proposed addition
 
@@ -63,14 +64,14 @@ interpretation through `safety-and-context.md`.
   intervention.
 - `evidence/guidelines/` — how to handle guidance itself, including conflicts
   between authorities.
-- `evidence-strength.md` — a change to how strength itself is assessed or
+- `policy/evidence-labels.md` — a change to how strength itself is assessed or
   reported.
 - `disordered-eating-safety.md` — anything affecting how restriction, weight
   loss, or elimination is handled.
-- `source-catalog.md` — authoritative-source routing or a named limited source.
-- `workflows.md` — reusable response behavior.
+- `sources/registry.md` — authoritative-source routing or a named limited source.
+- `workflows/` — reusable response behavior.
 - `self-experimentation.md` — bounded behavioral testing.
-- `knowledge/runtime/` — reviewed recipes and practical material safe for
+- `practical/` — reviewed recipes and practical material safe for
   ordinary responses.
 - `knowledge/archive/` — incomplete extraction retained only for review.
 - `editorial-*.md` — research backlog not approved for runtime use.
@@ -80,7 +81,7 @@ interpretation through `safety-and-context.md`.
 An entry is not promotable until all of these hold:
 
 1. Every claim carries an explicit `**Strength:**` label from
-   `evidence-strength.md`.
+   `policy/evidence-labels.md`.
 2. Every claim cites a resolvable identifier — DOI, PubMed ID, or stable URL —
    so the claim can be verified and its history reconstructed.
 3. The strongest claim in the file matches the `strength` value in frontmatter.

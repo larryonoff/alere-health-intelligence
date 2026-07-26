@@ -171,8 +171,8 @@ dried kidney beans. Never advise that soaking can be skipped without loss.
   conditions without routing per `../../safety-and-context.md`.
 - Do not interpret an individual's mineral status or recommend supplementation on
   the basis of phytate intake.
-- Cooking instructions in `../../knowledge/runtime/` are practical reference
+- Cooking instructions in `../../practical/` are practical reference
   material, not medical guidance.
 
-Related: `fiber.md`, `protein.md`, `../../knowledge/runtime/recipe-index.md`,
+Related: `fiber.md`, `protein.md`, `../../practical/recipe-index.md`,
 `../../safety-and-context.md`.

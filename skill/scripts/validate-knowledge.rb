@@ -5,15 +5,15 @@ require "yaml"
 require "date"
 
 skill_root = File.expand_path("..", __dir__)
-runtime = File.join(skill_root, "references", "knowledge", "runtime")
+practical = File.join(skill_root, "references", "practical")
 archive = File.join(skill_root, "references", "knowledge", "archive")
 
 errors = []
 warnings = []
 ids = {}
 
-recipe_files = Dir[File.join(runtime, "recipes", "*.md")].sort
-errors << "no runtime recipes found" if recipe_files.empty?
+recipe_files = Dir[File.join(practical, "recipes", "*.md")].sort
+errors << "no practical recipes found" if recipe_files.empty?
 
 recipe_files.each do |path|
   text = File.read(path, encoding: "UTF-8")
@@ -199,7 +199,7 @@ fixture_files.each do |path|
   end
 end
 
-runtime_text = Dir[File.join(runtime, "**", "*")].select { |p| File.file?(p) }
+practical_text = Dir[File.join(practical, "**", "*")].select { |p| File.file?(p) }
   .map { |p| File.read(p, encoding: "UTF-8") }.join("\n")
 
 banned = {
@@ -212,10 +212,10 @@ banned = {
 }
 
 banned.each do |label, pattern|
-  errors << "runtime contains #{label}" if runtime_text.match?(pattern)
+  errors << "practical contains #{label}" if practical_text.match?(pattern)
 end
 
-menu_path = File.join(runtime, "planning", "flexible-seven-day-menu.md")
+menu_path = File.join(practical, "planning", "flexible-seven-day-menu.md")
 if File.exist?(menu_path)
   menu = File.read(menu_path, encoding: "UTF-8")
   referenced = menu.scan(/`([a-z0-9]+(?:-[a-z0-9]+)*)`/).flatten

@@ -129,4 +129,4 @@ distinction is usually what matters practically to the user.
   present it as available treatment.
 
 Related: `fiber.md`, `../guidelines/credentialed-claims-without-citations.md`,
-`../../safety-and-context.md`, `../../evidence-strength.md`.
+`../../safety-and-context.md`, `../../policy/evidence-labels.md`.

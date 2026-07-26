@@ -18,7 +18,7 @@ Guidelines depart from the scientific report commissioned to inform them.
 
 ## Why this file exists
 
-`source-catalog.md` ranks source types, and `evidence-strength.md` rates
+`sources/registry.md` ranks source types, and `policy/evidence-labels.md` rates
 certainty. Neither answers what to do when two bodies of comparable standing
 reach different conclusions from the same literature.
 
@@ -88,7 +88,7 @@ act on.
 4. Do not characterize the disagreement in political terms. Describe the
    evidentiary and process disagreement, and let the user decide.
 5. Note that guidelines are population policy, not individual prescription — the
-   existing rule in `source-catalog.md`.
+   existing rule in `sources/registry.md`.
 
 ## General rules for conflicting guidance
 
@@ -117,5 +117,5 @@ act on.
 - Do not give individual clinical advice on the basis of a guideline dispute.
   Route per `../../safety-and-context.md`.
 
-Related: `../../source-catalog.md`, `../../evidence-strength.md`,
+Related: `../../policy/source-selection.md`, `../../policy/evidence-labels.md`,
 `../conditions/elevated-ldl.md`, `../longevity/dietary-patterns.md`.

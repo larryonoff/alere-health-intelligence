@@ -3,7 +3,7 @@
 This is a maintenance index, not a source of claims for user responses. Open
 and verify the current underlying document before promotion or citation.
 
-For where to search and which endpoint to use, see `docs/source-registry.md` —
+For where to search and which endpoint to use, see `skill/references/sources/registry.md` —
 it carries the identifier-verification APIs, the Cambridge nutrition journals, the
 named-researcher route, and per-source access notes. The verification procedure
 itself is `docs/verification-playbook.md`.

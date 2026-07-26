@@ -128,7 +128,7 @@ someone with kidney disease or another condition affecting protein handling.
   can be scored.
 - Physical activity, sleep, and not smoking have at least as much support as diet
   for healthspan; nutrition is one domain, not the whole answer. See
-  `source-catalog.md` for the ACLM domains and WHO activity guidance.
+  `sources/registry.md` for the ACLM domains and WHO activity guidance.
 - Energy restriction, fasting protocols, and supplement regimens belong to
   `unproven-interventions.md` and `../../self-experimentation.md`.
 
