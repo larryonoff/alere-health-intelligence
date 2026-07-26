@@ -60,8 +60,9 @@ directing treatment. It does not diagnose, interpret laboratory results, set
 supplement doses, design therapeutic plans, or give medication guidance — and it
 says which part of a question requires a clinician.
 
-When no reliable source covers a question, Alere says so rather than producing a
-plausible answer.
+When the local corpus has no reviewed answer, Alere checks current authoritative
+sources when possible. If no reliable source is found—or verification is
+unavailable—it says so rather than producing a plausible answer.
 
 ## Related documents
 

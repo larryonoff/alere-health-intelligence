@@ -6,8 +6,9 @@ one was violated in practice and cost real work.
 The procedure that operationalises these rules — how to verify a claim, how to
 confirm an identifier supports it rather than merely resolving, how to pick a
 strength label, and which database answers which question — is
-`docs/verification-playbook.md` and `docs/source-registry.md`. Read them before
-writing or challenging an evidence entry.
+`docs/verification-playbook.md` and
+`skill/references/sources/registry.md`. Read them before writing or challenging
+an evidence entry.
 
 ## The standard applies to you, not just to the skill
 

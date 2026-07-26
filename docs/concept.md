@@ -230,9 +230,9 @@ One loop, no tabs, no logging requirement:
    - **the real source**, checkable;
    - **the boundary** — what needs a clinician.
 
-`skill/references/workflows.md` already specifies exactly this shape
+`skill/references/workflows/` already specifies exactly this shape
 (Conclusion / Evidence / Practical application / Limits).
-`source-catalog.md` already specifies the evidence hierarchy.
+`sources/registry.md` already specifies the evidence hierarchy.
 `safety-and-context.md` already specifies the boundaries.
 
 **The concept is not new work — it is promoting what already exists in the skill
@@ -393,21 +393,29 @@ that is what determines how they must be maintained.
 skill/
 ├── SKILL.md                          — routing only, stays small
 └── references/
-    ├── evidence-strength.md          — the taxonomy; governs every claim
+    ├── policy/
+    │   ├── evidence-labels.md        — compact runtime taxonomy
+    │   └── source-selection.md       — compact source-selection rules
+    ├── methodology/
+    │   └── evidence-grading.md       — full grading methodology
     ├── evidence/                     — Tier A corpus (strength-labeled, cited)
     │   ├── README.md                 — frontmatter contract, citation rule
     │   ├── conditions/               — condition and marker entries
     │   ├── longevity/                — healthspan and ageing entries
     │   └── guidelines/               — handling guidance and its conflicts
-    ├── source-catalog.md             — where authority lives; routing to sources
-    ├── workflows.md                  — response shapes per task
+    ├── sources/                     — maintained source inventory
+    │   └── registry.md
+    ├── workflows/                   — one response shape per task family
     ├── disordered-eating-safety.md   — precedes the nutrition question
     ├── safety-and-context.md         — boundaries and higher-risk routing
     ├── self-experimentation.md       — bounded personal testing
-    ├── knowledge-map.md              — routing into practical knowledge
-    ├── knowledge/                    — recipes, constructors, menus, localization
-    │   ├── runtime/                  — reviewed, usable
-    │   └── archive/                  — quarantined, never runtime
+    ├── practical/                   — reviewed, usable knowledge
+    │   ├── index.md
+    │   ├── recipes/
+    │   ├── constructors/
+    │   ├── planning/
+    │   └── localization/
+    ├── knowledge/archive/           — quarantined, never runtime
     └── editorial-*.md                — development inputs, never runtime authority
 ```
 
@@ -415,12 +423,12 @@ Why these particular seams:
 
 | Separation | Reason |
 | --- | --- |
-| `evidence/` vs `knowledge/` | Different review rules. A wrong evidence claim misleads about health; a wrong recipe quantity spoils dinner. Different failure severity, different governance. |
-| `evidence-strength.md` standalone | It governs every claim in every entry. Embedding it inside one entry would make the taxonomy invisible to the others. |
+| `evidence/` vs `practical/` | Different review rules. A wrong evidence claim misleads about health; a wrong recipe quantity spoils dinner. Different failure severity, different governance. |
+| `policy/evidence-labels.md` standalone | It governs every claim in every entry. Embedding it inside one entry would make the taxonomy invisible to the others. |
 | `conditions/` vs `longevity/` | Different evidence character (see below). |
-| `source-catalog.md` vs `evidence/` | The catalog says *where authority lives*; entries say *what it established*. Sources change slowly; claims change with each guideline revision. |
+| `sources/registry.md` vs `evidence/` | The catalog says *where authority lives*; entries say *what it established*. Sources change slowly; claims change with each guideline revision. |
 | One file per condition | Token budget. A monolithic evidence file cannot load inside 4K alongside a prompt. |
-| `runtime/` vs `archive/` | Existing quarantine rule, now a correctness requirement since an app ships it. |
+| `practical/` vs `knowledge/archive/` | Reviewed material is directly routable; imported material remains explicitly quarantined. |
 
 Every claim carries a resolvable identifier — DOI, PubMed ID, or stable URL — so
 provenance can be reconstructed and the scientific basis demonstrated on demand.
@@ -494,7 +502,7 @@ thinking. It claims 30,000+ students, a Russian educational license, and
 
 Two observations matter.
 
-**The six pillars match ACLM**, already in `source-catalog.md` (nutrition,
+**The six pillars match ACLM**, already in `sources/registry.md` (nutrition,
 activity, sleep, stress, connectedness, avoiding risky substances). Same
 discipline, same vocabulary. Integration is natural.
 
@@ -715,11 +723,11 @@ Required additions to the MVP evaluation plan:
    the earlier draft of this document; the jurisdictional moat argument was
    weak, because ordinary ChatGPT is not blocked in the EU — only ChatGPT
    *Health* is, and that gates medical-record connection, not food conversation.
-4. **`source-catalog.md` — add condition-level authorities**: ADA/EASD, AHA/ACC,
+4. **`sources/registry.md` — add condition-level authorities**: ADA/EASD, AHA/ACC,
    AGA, National Psoriasis Foundation, Cochrane. Keep the existing licensing,
    dating, and review discipline.
 5. **Add a strength-of-evidence taxonomy** as a first-class runtime reference,
-   destination `workflows.md` or a new `evidence-strength.md`, promoted through
+   destination `workflows/` or a new `policy/evidence-labels.md`, promoted through
    `editorial-promotion-checklist.md`.
 6. **Regulatory boundary section** in `docs/product.md`, per §6.
 
@@ -828,10 +836,10 @@ adding Tier B is a new tool, not a redesign.
 
 ### Open sub-decisions
 
-- Europe PMC attribution and rate-limit terms; record in `source-catalog.md`
+- Europe PMC attribution and rate-limit terms; record in `sources/registry.md`
   under its existing licensing convention.
 - Corpus entry schema — the machine-readable strength-of-evidence field (§4a).
-- Review cadence for Tier A: `source-catalog.md` mandates 12 months, but ADA
+- Review cadence for Tier A: `sources/registry.md` mandates 12 months, but ADA
   Standards of Care revise annually, so condition entries need a tighter cycle.
 
 ---
@@ -911,7 +919,7 @@ and high-certainty evidence of a trivial effect warrants a weak recommendation.
 This matters directly: the National Psoriasis Foundation *strongly recommends*
 weight reduction while rating other dietary evidence *low quality*. A single
 merged label cannot express that, and expressing it is the product's whole value.
-`evidence-strength.md` now separates the two, and adds the nutrition-specific
+`policy/evidence-labels.md` now separates the two, and adds the nutrition-specific
 caveat that clinical-drug certainty standards would label nearly all nutrition
 evidence "low" — which is why NutriGrade exists.
 
@@ -946,18 +954,17 @@ corpus entries legitimately discuss weight loss with real outcome evidence.
 prohibitions, and how medically-indicated weight loss coexists with them. It is
 routed **before** the nutrition question, not after.
 
-**4. No documented failure modes.**
+**4. Documented failure modes.**
 Skill-authoring practice recommends naming concrete failure modes rather than only
 stating rules, because a model that understands the cause can generalize to edge
-cases. `SKILL.md` now lists eight, including borrowed credibility, certainty
-inflation under user pressure, trial protocol read as prescription, and answering
-from general knowledge when no entry exists.
+cases. `SKILL.md` keeps the runtime invariants and routes evidence-heavy requests
+to `references/failure-modes.md` for the detailed cases.
 
-**5. Evaluation fixtures now exist.** 47 cases across seven categories in
+**5. Evaluation fixtures now exist.** 70 cases across nine categories in
 `skill/evaluations/`, structurally validated by the same script as the corpus:
 strength labeling (one case per label plus the split-strength psoriasis case),
 citation faithfulness, no-source behavior, disordered eating, medication boundary,
-conflicting guidance, and consistency.
+conflicting guidance, credentialed claims, named books, and consistency.
 
 Design decisions worth noting:
 

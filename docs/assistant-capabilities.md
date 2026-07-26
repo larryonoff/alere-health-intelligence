@@ -24,7 +24,7 @@ or marker — and how strongly. State the authority, the population it applies t
 and what belongs to a clinician.
 
 The reviewed corpus lives in `skill/references/evidence/`, governed by
-`skill/references/evidence-strength.md`. When no entry covers the question, say
+`skill/references/policy/evidence-labels.md`. When no entry covers the question, say
 so rather than answering from general knowledge.
 
 Never present a trial protocol target or a population reference value as a
@@ -129,7 +129,7 @@ rules and different failure severity:
 dietary patterns for healthspan, and longevity interventions that lack human
 evidence. Every claim carries a strength label and a resolvable citation.
 
-**Practical knowledge** (`skill/references/knowledge/runtime/`) — balanced meal
+**Practical knowledge** (`skill/references/practical/`) — balanced meal
 composition, meal constructors, recipes and substitutions, menus and shopping,
 storage and waste reduction, spices and preparation methods.
 

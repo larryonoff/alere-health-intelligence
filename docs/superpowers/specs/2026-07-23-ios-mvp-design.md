@@ -33,9 +33,10 @@ The initial audience is generally healthy adults who want to improve ordinary
 weekday eating without counting every calorie. They need practical help in the
 moment and useful reflection across the week.
 
-The initial localization targets Russian-speaking users living in Poland.
-Recommendations use metric units, Polish złoty, local seasonality, and products
-that can realistically be found in Poland.
+The launch language is English for a global adult audience. Russian-speaking
+users in Poland remain the first planned localization: that version uses metric
+units, Polish złoty, local seasonality, and products realistically available in
+Poland.
 
 ## Core experience
 

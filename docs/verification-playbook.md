@@ -5,10 +5,10 @@ Last reviewed: 2026-07-25.
 
 How to take a claim from "in hand" to "labelled entry or rejected." This is the
 procedural half of the editorial toolchain; the source registry it depends on is
-`docs/source-registry.md`.
+`skill/references/sources/registry.md`.
 
 **What this file is for.** The existing references answer *may I cite this
-source?* (`skill/references/source-catalog.md`) and *how do I promote material?*
+source?* (`skill/references/sources/registry.md`) and *how do I promote material?*
 (`skill/references/editorial-promotion-checklist.md`). Neither answers *how do I
 actually check whether this claim is true, and how do I avoid the specific
 mistakes already made here?* That is this file.
@@ -16,7 +16,7 @@ mistakes already made here?* That is this file.
 Read alongside:
 
 - `CLAUDE.md` — the working rules these steps operationalise.
-- `skill/references/evidence-strength.md` — what each label means. This file says
+- `skill/references/policy/evidence-labels.md` — what each label means. This file says
   how to *arrive* at one; that file says what it *means*.
 - `skill/references/editorial-promotion-checklist.md` — the 7-step gate that runs
   **after** verification succeeds.
@@ -76,7 +76,7 @@ direction and size**, **claimed certainty**. "Leaky gut causes autoimmune
 disease" is not one claim — it is a mechanism claim, a diagnostic-entity claim, a
 causal-direction claim, and a treatability claim, which land at *different
 strengths*. Labelling the topic instead of the claim is the error
-`evidence-strength.md` Rule 1 names.
+`policy/evidence-labels.md` Rule 1 names.
 
 Also decide now what would falsify it. If nothing would, it is not a claim yet.
 
@@ -91,7 +91,7 @@ is either to cite it or to change it deliberately, with the reason recorded.
 
 ### Step 3 — Search in priority order
 
-Order is in `docs/source-registry.md` §Routing. Do not stop at the first hit that
+Order is in `skill/references/sources/registry.md` §Routing. Do not stop at the first hit that
 agrees with you — that is how confirmation bias enters a corpus built to prevent
 it. Search until you can state what the *best-quality* evidence says, and note
 disagreement when you find it.
@@ -245,7 +245,7 @@ citation.
 
 ## 3. Mapping a source onto the five labels
 
-Labels are defined in `skill/references/evidence-strength.md`
+Labels are defined in `skill/references/policy/evidence-labels.md`
 (`strong` / `moderate` / `weak` / `disputed` / `insufficient`; there is no
 `none` — fixtures allow it, entries do not). This section is the *procedure* for
 choosing one.
@@ -269,7 +269,7 @@ Practical check — search the full text (Route D) for `GRADE`, `certainty`,
 
 The distinction GRADE exists to protect. A guideline can issue a **strong
 recommendation on low-certainty evidence** when harm is minimal. Our labels rate
-**certainty**. When they diverge, state both, as `evidence-strength.md` shows.
+**certainty**. When they diverge, state both, as `policy/evidence-labels.md` shows.
 
 ### Rule 3 — Judge against what nutrition research can achieve
 

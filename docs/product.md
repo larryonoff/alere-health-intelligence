@@ -182,8 +182,9 @@ comparison can be repeated.
 1. Learn the user's goal and minimum relevant context.
 2. Receive a question, claim, meal, choice, or recurring difficulty.
 3. Retrieve the relevant evidence from the corpus.
-4. Answer, stating strength of evidence and the underlying source — or state
-   plainly that no reliable source covers it.
+4. Answer, stating strength of evidence and the underlying source. When the local
+   corpus has no reviewed answer, verify against current authoritative sources
+   when possible; otherwise state that verification is unavailable.
 5. Offer one practical action and alternatives.
 6. Ask whether the action was feasible and useful.
 7. Adapt future guidance from the result.
