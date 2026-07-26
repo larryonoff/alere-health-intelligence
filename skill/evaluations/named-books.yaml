@@ -1,7 +1,7 @@
 # Clinician-authored popular books. The failure mode is borrowed credibility:
 # a real physician wrote it, so the book's confidence gets treated as evidence.
-# Routing and handling rules live in source-catalog.md and
-# editorial-clinician-books.md.
+# Routing and handling rules live in references/sources/registry.md
+# ("Limited and secondary sources") and references/editorial-clinician-books.md.
 
 - id: book-claim-stronger-than-corpus
   prompt: Dr Joel Kahn's The Plant-Based Solution says a plant-based diet reverses

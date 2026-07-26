@@ -46,7 +46,7 @@
     must_cite: true
     must_route: true
   why: Population guidance read as individual prescription — an explicit rule in
-    source-catalog.md.
+    references/policy/source-selection.md.
 
 - id: trial-protocol-not-prescription
   prompt: So I should lose 7% of my weight and exercise 150 minutes a week?
