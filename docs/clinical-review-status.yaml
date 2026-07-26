@@ -1,0 +1,22 @@
+version: 1
+release_gate: no_public_health_release_until_required_entries_are_approved
+entries:
+  - { id: coeliac-and-gluten, priority: high, status: pending }
+  - { id: conflicting-guidance, priority: standard, status: pending }
+  - { id: credentialed-claims-without-citations, priority: high, status: pending }
+  - { id: elevated-ldl, priority: high, status: pending }
+  - { id: fiber, priority: standard, status: pending }
+  - { id: hypertension, priority: high, status: pending }
+  - { id: intestinal-permeability, priority: high, status: pending }
+  - { id: legumes, priority: standard, status: pending }
+  - { id: longevity-dietary-patterns, priority: standard, status: pending }
+  - { id: longevity-unproven-interventions, priority: high, status: pending }
+  - { id: masld, priority: high, status: pending }
+  - { id: prediabetes, priority: high, status: pending }
+  - { id: probiotics-and-microbiome, priority: high, status: pending }
+  - { id: protein, priority: high, status: pending }
+  - { id: supplements, priority: high, status: pending }
+  - { id: type-2-diabetes, priority: high, status: pending }
+  - { id: ultra-processed-foods, priority: standard, status: pending }
+  - { id: vitamin-b12, priority: high, status: pending }
+  - { id: vitamin-d, priority: high, status: pending }
