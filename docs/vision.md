@@ -1,12 +1,12 @@
 # Alere: Health Intelligence — Vision
 
-Last reviewed: 2026-07-25.
+Last reviewed: 2026-07-26.
 
 ## Purpose
 
-Alere helps people make better food decisions for long-term health by showing
-what is actually proven, how strong that proof is, and one thing they can do
-today.
+Alere helps people make better everyday decisions for long-term health by
+showing what is actually proven, how strong that proof is, and one thing they
+can do today. Nutrition is the first domain.
 
 The goal is healthy longevity — healthspan, not merely lifespan. Specific health
 conditions are how people arrive; long-term health is what the product serves.
@@ -15,6 +15,41 @@ It is not a diet program, a calorie counter, a food-ranking system, or a
 replacement for medical care. Its role is to turn complex and often contradictory
 nutrition information into a decision a person can realistically act on, without
 overstating what the evidence supports.
+
+## Core concept
+
+Alere is not a research search engine or a collection of abstract healthy-eating
+rules. It is a maintained knowledge base of evidence-informed, practical
+decisions. It turns current health knowledge and personal context into a clear
+answer:
+
+- what to keep;
+- what to limit;
+- what to add;
+- what may be missing;
+- and what information is still needed before giving a responsible answer.
+
+The knowledge base combines reviewed evidence with practical food knowledge:
+foundational recipes, meal constructors, cooking methods, substitutions, and
+principles for combining ingredients. Alere uses these foundations to suggest or
+adapt meals that are both health-supporting and enjoyable, while accounting for
+the person's preferences, available ingredients, budget, time, equipment,
+culture, location, and relevant health constraints.
+
+Search is an input to this knowledge system, not a substitute for it. New
+research and guidance must be assessed for quality, applicability, consistency,
+and practical value before becoming runtime knowledge. The knowledge base must
+be reviewed and updated regularly, and it must distinguish:
+
+- established consensus;
+- credible newer evidence not yet widely reflected in routine care;
+- preliminary or disputed findings;
+- and claims that current evidence does not support.
+
+Being newer than routine practice is not itself evidence of being better. Alere
+should explain when evidence may not yet be reflected consistently across
+clinics, hospitals, and other care settings without presenting novelty as
+authority.
 
 ## What makes it different
 
@@ -49,6 +84,11 @@ healthspan and the longevity interventions that lack human evidence.
 The skill is the base. A native iOS application is its first client, built around
 one loop: a question, a calibrated answer with its source, one practical action,
 and feedback.
+
+Nutrition is the starting domain, not the final boundary. Once the same evidence,
+safety, personalization, and maintenance standards can be supported, Alere may
+expand into other parts of lifestyle that shape long-term health, including
+movement, sleep, recovery, stress, and sustainable daily habits.
 
 Product interface, persistence, system integrations, and provider routing belong
 outside the skill.

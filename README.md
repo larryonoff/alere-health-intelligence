@@ -1,14 +1,20 @@
 # Alere: Health Intelligence
 
-Alere shows what is actually proven about food, how strong that proof is, and one
-thing you can do today — in service of healthy longevity.
+Alere is a maintained knowledge base of evidence-informed, practical decisions
+for healthy longevity. It turns current knowledge and personal context into a
+clear answer: what to keep, what to limit, what to add, what may be missing, and
+what information is still needed.
 
 The project combines an implementation-independent AI skill with a planned native
 iOS application. The skill is the base: it holds the behavior, the evidence
-corpus, and the safety boundaries. The application is a client of that skill.
+corpus, practical food knowledge, and the safety boundaries. Its foundational
+recipes, meal constructors, cooking methods, and substitutions help the
+assistant suggest food that is both health-supporting and enjoyable. The
+application is a client of that skill.
 
-It starts with nutrition and the metabolic conditions where dietary evidence is
-strongest, and may evolve into a broader personal health assistant over time.
+Nutrition is the first domain, including the metabolic conditions where dietary
+evidence is strongest. The same approach may later expand to movement, sleep,
+recovery, stress, and sustainable daily habits.
 
 ## Principles
 
@@ -39,12 +45,20 @@ strongest, and may evolve into a broader personal health assistant over time.
 - `skill/references/failure-modes.md` — detailed evidence, guidance, and safety
   errors loaded only for relevant requests
 - `skill/references/sources/registry.md` — authoritative sources and usage rules
+- `skill/maintenance/source-monitoring.yaml` — source roles, review cadence, and
+  literature queries
+- `skill/maintenance/review-queue.yaml` — unreviewed discoveries awaiting
+  editorial verification
+- `skill/maintenance/CHANGELOG.md` — user-relevant history of runtime knowledge
+  changes
 - `skill/references/practical/index.md` — routing into practical knowledge
 - `skill/references/practical/` — reviewed recipes, constructors, menus, and
   localization
 - `skill/references/knowledge/archive/` — quarantined imported material
 - `skill/references/editorial-*.md` — development inputs, not runtime authority
 - `skill/scripts/validate-knowledge.rb` — validates the corpus
+- `skill/scripts/maintain-knowledge.rb` — checks maintenance deadlines and
+  discovers review candidates
 - `skill/agents/openai.yaml` — skill interface metadata
 
 ### Documentation — product decisions
@@ -55,6 +69,8 @@ strongest, and may evolve into a broader personal health assistant over time.
 - `docs/assistant-capabilities.md` — situations and personalization boundaries
 - `docs/verification-playbook.md` — how to verify a claim before it becomes an
   evidence entry, and how to confirm an identifier supports it
+- `docs/knowledge-maintenance.md` — stable/frontier layers and the recurring
+  update process
 - `docs/clinical-review.md` and `docs/clinical-review-status.yaml` — reviewer
   procedure and machine-checked public-release gate
 - `docs/superpowers/specs/` — approved product and technical designs
