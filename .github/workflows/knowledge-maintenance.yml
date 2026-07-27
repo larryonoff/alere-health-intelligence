@@ -1,0 +1,49 @@
+name: Knowledge maintenance
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/knowledge-maintenance.yml"
+      - "docs/knowledge-maintenance.md"
+      - "skill/maintenance/**"
+      - "skill/references/evidence/**"
+      - "skill/references/sources/registry.md"
+      - "skill/scripts/maintain-knowledge.rb"
+  push:
+    paths:
+      - ".github/workflows/knowledge-maintenance.yml"
+      - "docs/knowledge-maintenance.md"
+      - "skill/maintenance/**"
+      - "skill/references/evidence/**"
+      - "skill/references/sources/registry.md"
+      - "skill/scripts/maintain-knowledge.rb"
+  schedule:
+    - cron: "17 5 * * *"
+    - cron: "41 5 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    if: github.event_name != 'schedule' || github.event.schedule == '17 5 * * *'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.4"
+      - run: ruby skill/scripts/maintain-knowledge.rb check
+      - run: ruby skill/scripts/validate-knowledge.rb
+
+  scan:
+    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'schedule' && github.event.schedule == '41 5 * * 1')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.4"
+      - name: Detect unreviewed literature candidates
+        run: ruby skill/scripts/maintain-knowledge.rb scan --dry-run --all --fail-on-candidates
