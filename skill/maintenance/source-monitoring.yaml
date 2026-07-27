@@ -1,0 +1,229 @@
+version: 1
+last_reviewed: 2026-07-26
+policy:
+  candidate_is_runtime_authority: false
+  institution_is_not_evidence_grade: true
+  stable_rule_requires_independent_confirmation: true
+  safety_signal_requires_immediate_review: true
+  default_scan_cadence_days: 14
+  default_manual_review_days: 90
+
+channels:
+  - id: harvard-nutrition-source
+    name: Harvard T.H. Chan School of Public Health — The Nutrition Source
+    role: academic-synthesis
+    tier: frontier
+    use_for:
+      - dietary-pattern synthesis
+      - practical translation
+      - recipes and meal composition
+      - independent critique of public guidance
+    never_use_alone_for:
+      - individualized clinical advice
+      - numerical treatment targets
+      - excluding a food group
+    urls:
+      - https://nutritionsource.hsph.harvard.edu/
+      - https://nutritionsource.hsph.harvard.edu/about/
+    cadence_days: 30
+    last_checked: 2026-07-26
+
+  - id: cochrane
+    name: Cochrane Library
+    role: evidence-synthesis
+    tier: stable
+    use_for:
+      - intervention effectiveness
+      - harms
+      - certainty assessment
+    never_use_alone_for:
+      - a review marked withdrawn or superseded
+      - a conclusion outside its population and outcomes
+    urls:
+      - https://www.cochranelibrary.com/
+    cadence_days: 30
+    last_checked: 2026-07-26
+
+  - id: nnr
+    name: Nordic Nutrition Recommendations
+    role: public-health-guidance
+    tier: stable
+    use_for:
+      - European dietary patterns
+      - food groups
+      - nutrient reference values
+      - sustainability
+    never_use_alone_for:
+      - individualized treatment
+      - evidence published after the current edition
+    urls:
+      - https://pub.norden.org/nord2023-003/
+    cadence_days: 90
+    last_checked: 2026-07-26
+
+  - id: efsa
+    name: European Food Safety Authority
+    role: regulatory-science
+    tier: stable
+    use_for:
+      - European dietary reference values
+      - tolerable upper levels
+      - food and supplement safety
+      - European monitoring
+    never_use_alone_for:
+      - an optimal personal diet
+      - individualized treatment targets
+    urls:
+      - https://www.efsa.europa.eu/en/topics/topic/dietary-reference-values
+      - https://www.efsa.europa.eu/en/topics/topic/food-supplements
+    cadence_days: 30
+    last_checked: 2026-07-26
+
+  - id: who
+    name: World Health Organization
+    role: public-health-guidance
+    tier: stable
+    use_for:
+      - global public-health baselines
+      - broad healthy-diet principles
+      - physical activity
+    never_use_alone_for:
+      - a fast-moving or disputed claim
+      - individualized treatment
+      - a recommendation whose underlying review is outdated
+    urls:
+      - https://www.who.int/news-room/fact-sheets/detail/healthy-diet
+      - https://www.who.int/publications/i/item/9789240015128
+    cadence_days: 90
+    last_checked: 2026-07-26
+
+  - id: condition-guidelines
+    name: Condition-specific guideline authorities
+    role: clinical-guidance
+    tier: stable
+    use_for:
+      - diabetes
+      - cardiovascular risk
+      - hypertension
+      - gastroenterology
+      - liver disease
+    never_use_alone_for:
+      - recommendations outside the issuing body's scope
+      - expert-opinion recommendations presented as strong evidence
+    urls:
+      - https://diabetesjournals.org/care/issue
+      - https://professional.heart.org/en/guidelines-and-statements
+      - https://gastro.org/clinical-guidance/
+      - https://www.easl.eu/clinical-practice-guidelines/
+    cadence_days: 30
+    last_checked: 2026-07-26
+
+  - id: poland
+    name: Polish official nutrition and food-safety sources
+    role: regional-guidance
+    tier: regional
+    use_for:
+      - Polish food-based communication
+      - local products and labels
+      - Polish monitoring
+    never_use_alone_for:
+      - frontier evidence
+      - claims outside Poland
+    urls:
+      - https://ncez.pzh.gov.pl/abc-zywienia/talerz-zdrowego-zywienia/
+      - https://www.gov.pl/web/piorin/pozostalosci-sor
+    cadence_days: 90
+    last_checked: 2026-07-26
+
+  - id: academic-frontier
+    name: Academic nutrition frontier
+    role: primary-research
+    tier: frontier
+    use_for:
+      - emerging hypotheses
+      - new human trials
+      - methods and measurement
+      - potential challenges to current guidance
+    never_use_alone_for:
+      - changing a stable recommendation
+      - presenting a press release as evidence
+      - inferring trust from university affiliation
+    urls:
+      - https://hsph.harvard.edu/department/nutrition/
+      - https://med.stanford.edu/nutrition/research.html
+      - https://nutrition.tufts.edu/research
+      - https://grants.nih.gov/funding/find-a-fit-for-your-research/nih-institutes-centers-offices/ONR
+    cadence_days: 14
+    last_checked: 2026-07-26
+
+  - id: nutrition-society-journals
+    name: Nutrition Society journals on Cambridge Core
+    role: research-publications
+    tier: frontier
+    use_for:
+      - critical and systematic reviews
+      - nutritional epidemiology
+      - human intervention research
+      - mechanisms and methods
+    never_use_alone_for:
+      - treating publisher or journal prestige as evidence strength
+      - treating conference material as a full peer-reviewed result
+    urls:
+      - https://www.cambridge.org/core/journals/nutrition-research-reviews
+      - https://www.cambridge.org/core/journals/british-journal-of-nutrition
+      - https://www.cambridge.org/core/journals/public-health-nutrition
+    cadence_days: 14
+    last_checked: 2026-07-26
+
+  - id: us-dietary-guidelines
+    name: Dietary Guidelines for Americans
+    role: government-guidance
+    tier: contested
+    use_for:
+      - United States policy context
+      - comparison with the scientific advisory report
+    never_use_alone_for:
+      - changing Alere's stable nutrition rules
+      - resolving a disputed nutrition claim
+      - European or Polish applicability
+    urls:
+      - https://www.dietaryguidelines.gov/
+    cadence_days: 30
+    last_checked: 2026-07-26
+
+literature_queries:
+  - id: dietary-patterns-reviews
+    topics:
+      - longevity-dietary-patterns
+      - prediabetes
+      - type-2-diabetes
+      - elevated-ldl
+      - hypertension
+      - masld
+    cadence_days: 14
+    last_scanned: 2026-07-26
+    europe_pmc_query: '(TITLE_ABS:"dietary pattern" OR TITLE_ABS:"healthy diet") AND (TITLE_ABS:"systematic review" OR TITLE_ABS:"meta-analysis")'
+
+  - id: nutrients-reviews
+    topics:
+      - fiber
+      - legumes
+      - protein
+      - vitamin-b12
+      - vitamin-d
+      - supplements
+      - probiotics-and-microbiome
+      - ultra-processed-foods
+    cadence_days: 14
+    last_scanned: 2026-07-26
+    europe_pmc_query: '(TITLE_ABS:fibre OR TITLE_ABS:fiber OR TITLE_ABS:legume OR TITLE_ABS:protein OR TITLE_ABS:"vitamin B12" OR TITLE_ABS:"vitamin D" OR TITLE_ABS:supplement OR TITLE_ABS:probiotic OR TITLE_ABS:"ultra-processed") AND (TITLE_ABS:"systematic review" OR TITLE_ABS:"meta-analysis")'
+
+  - id: nutrition-safety-signals
+    topics:
+      - supplements
+      - vitamin-b12
+      - vitamin-d
+      - probiotics-and-microbiome
+    cadence_days: 7
+    last_scanned: 2026-07-26
+    europe_pmc_query: '(TITLE_ABS:nutrition OR TITLE_ABS:supplement OR TITLE_ABS:diet) AND (TITLE_ABS:adverse OR TITLE_ABS:safety OR TITLE_ABS:harm OR TITLE_ABS:contraindication) AND (TITLE_ABS:"systematic review" OR TITLE_ABS:"meta-analysis")'
