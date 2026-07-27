@@ -5,7 +5,12 @@ editorial verification. Use it to locate authoritative evidence and the tools
 needed to verify identifiers. Do not treat it as a set of claims to repeat
 without checking the linked source.
 
-Last reviewed: 2026-07-25.
+Last reviewed: 2026-07-26.
+
+Monitoring roles, cadences, and queries live in
+`../../maintenance/source-monitoring.yaml`. This registry explains how to use a
+source; the manifest determines when it is checked. The operational process is
+`../../../docs/knowledge-maintenance.md`.
 
 ## Read only the section you need
 
@@ -40,6 +45,13 @@ in `evidence/`. Prefer an existing entry over re-deriving a claim from a source.
 6. Cite the underlying source rather than this catalog.
 7. Record uncertainty when reputable sources disagree or evidence is
    observational, indirect, or incomplete.
+8. Never infer evidence strength from an institution, publisher, journal, or
+   government label. Grade the claim and its underlying evidence.
+9. Treat government guidance as one input when science, implementation,
+   affordability, and policy may have been combined. Compare disputed guidance
+   with its scientific review and independent evidence synthesis.
+10. Treat a credible safety signal as a reason for immediate review, not as
+    proof of causation and not as something to postpone until the normal cycle.
 
 ## Identifier and literature APIs
 
@@ -119,6 +131,12 @@ peer-reviewed work. A trade book, course, or credential is not itself evidence.
 Use for accessible explanations of dietary patterns, food groups, carbohydrate
 quality, protein sources, dietary fats, beverages, and practical meal
 composition.
+
+Harvard Nutrition Source is Alere's leading academic synthesis for general
+nutrition and practical translation. That role does not make it a clinical
+guideline or allow its institutional name to substitute for evidence. For a
+precise, disputed, numerical, exclusionary, or higher-risk claim, open and cite
+the underlying guideline, review, or study and seek independent confirmation.
 
 The Healthy Eating Plate is a flexible visual guide rather than a calorie or
 serving prescription. Apply its principles across mixed dishes and cultural
@@ -242,6 +260,23 @@ below.
 
 Use for independent academic assessment, particularly of dietary-pattern trials
 and federal guidance.
+
+### Tufts Friedman School of Nutrition Science and Policy
+
+- Research: <https://nutrition.tufts.edu/research>
+
+Use as a frontier feed for nutrition science, behaviour, food policy, food
+systems, and practical implementation. A school article or press release is a
+lead to verify, not runtime authority.
+
+### NIH Office of Nutrition Research
+
+- <https://grants.nih.gov/funding/find-a-fit-for-your-research/nih-institutes-centers-offices/ONR>
+
+Use to identify emerging United States research priorities such as precision
+nutrition, Food is Medicine, ultra-processed foods, and nutrition regulatory
+science. Funding priorities identify active questions; they do not establish
+answers or recommendations.
 
 ### PubMed Central Open Access subset
 
@@ -464,12 +499,40 @@ above:
 
 Do not use testimonials or marketing claims as efficacy evidence.
 
+### Stable and frontier are different questions
+
+Use two labels independently:
+
+- **stable** — suitable to anchor a user recommendation after applicability and
+  safety checks;
+- **frontier** — credible new evidence worth monitoring or discussing, but not
+  yet sufficient to silently change a stable recommendation.
+
+Harvard, Stanford, Tufts, NIH, universities, and journals may surface frontier
+evidence earlier than guidance bodies. WHO, EFSA, NNR, and clinical guideline
+organizations may be slower because they synthesize, contextualize, and govern
+recommendations. Neither speed nor institutional caution determines truth.
+
+Changing a stable recommendation normally requires an applicable current
+guideline or systematic synthesis plus independent confirmation. An urgent
+safety signal may restrict a recommendation immediately while verification is
+underway.
+
 ## Maintenance
 
+Use `../../maintenance/source-monitoring.yaml` for per-source cadence. Run:
+
+```sh
+ruby skill/scripts/maintain-knowledge.rb check
+ruby skill/scripts/maintain-knowledge.rb scan
+```
+
 Review this registry at least every 12 months and whenever a linked organization
-publishes a major guideline update or an API path stops working. Check links,
-revision dates, access status, changed recommendations, and all attribution,
-reuse, licensing, and mounting terms.
+publishes a major guideline update, a credible safety signal appears, or an API
+path stops working. Check links, revision dates, access status, changed
+recommendations, conflicts, and all attribution, reuse, licensing, and mounting
+terms. Scan results are unreviewed editorial candidates and never enter runtime
+automatically.
 
 ### Access notes and workarounds
 

@@ -71,7 +71,10 @@ can do today.
 
 When maintaining or expanding this skill, read
 `references/editorial-promotion-checklist.md` and
-`references/editorial-source-backlog.md`. Read
+`references/editorial-source-backlog.md`. For recurring source review and
+literature discovery, follow `../docs/knowledge-maintenance.md` and
+`maintenance/source-monitoring.yaml`; scan results remain unreviewed editorial
+candidates. Read
 `references/methodology/evidence-grading.md` when changing the evidence
 taxonomy, and `references/sources/registry.md` when maintaining named sources.
 Editorial and maintenance references are not runtime authority.
